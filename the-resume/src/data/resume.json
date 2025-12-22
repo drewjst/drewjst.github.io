@@ -1,0 +1,108 @@
+{
+  "name": "Andrew Stalker",
+  "title": "Principal Software Engineer",
+  "contact": {
+    "email": "drew.jst@gmail.com",
+    "phone": "765.237.2841",
+    "github": "https://github.com",
+    "linkedin": "https://linkedin.com"
+  },
+  "summary": "Results-driven Principal Software Engineer with 9+ years of full-stack experience architecting high-scale distributed systems and microservices ecosystems. Proven technical leader at Liberty Mutual, specializing in modern stack migrations (Angular/TypeScript + Java/Spring Boot) and cloud-native architectures on AWS to deliver scalable, resilient solutions with operational excellence. Excel at guiding cross-functional teams, mentoring engineers, and leveraging agentic AI (GitHub Copilot) alongside CI/CD pipelines to boost performance 20–30%, reduce bugs, and align technical roadmaps with business outcomes. Proven in high-pressure environments—from Army deployments to production launches—delivering scalable solutions that prioritize clarity, iteration, and efficiency.",
+  "experience": [
+    {
+      "title": "Principal Software Engineer",
+      "company": "Liberty Mutual Insurance",
+      "startDate": "Aug 2023",
+      "endDate": "Present",
+      "highlights": [
+        "Acted as a technical leader in the Small Commercial Products Tech team, guiding the development of system, technical, and product standards while leading the end-to-end delivery of flagship products, including the current build of the new Workers Comp product on a modern scalable stack (Angular/TypeScript + Java/Spring).",
+        "Shipped multiple products and enhancements, delivering across the small commercial portfolio (BOP, Commercial Package, Simple BOP, Auto), consistently enhancing core functionality with zero major disruptions.",
+        "Implemented Angular + NgRx for predictable data flows and scalable state management, streamlining front-end development and reducing UI bugs by establishing reusable patterns.",
+        "Integrated third-party APIs to extend interoperability and cross-system workflows; leveraged GitHub Copilot and agentic AI to author production-ready, performant code 20–30% faster, saving team time on routine tasks while upholding quality standards in scalable environments.",
+        "Collaborated directly with Product Management and Architecture to define the long-term technical roadmap for key systems, strategically planning incremental migrations and ensuring alignment with enterprise-wide cloud goals."
+      ]
+    },
+    {
+      "title": "Senior Software Engineer",
+      "company": "Liberty Mutual Insurance",
+      "startDate": "Apr 2020",
+      "endDate": "Aug 2023",
+      "highlights": [
+        "Built robust, scalable full-stack web applications using Angular for front-end and Java/Spring Boot for back-end, supporting agile sprints that delivered high-quality solutions on time for insurance product enhancements.",
+        "Designed multithreaded/async Java algorithms to boost search responsiveness and UX, resulting in materially faster query times for high-volume insurance workflows.",
+        "Committed to professional growth by tracking industry trends, attending conferences, and sharing knowledge via internal workshops, mentoring juniors to boost team-wide adoption of best practices."
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Liberty Mutual Insurance",
+      "startDate": "Dec 2017",
+      "endDate": "April 2020",
+      "highlights": [
+        "Developed and optimized full-stack features in enterprise insurance systems, focusing on performance and scalability to handle increasing transaction volumes.",
+        "Contributed to agile teams in refactoring legacy codebases, improving system reliability and developer productivity.",
+        "Supported back-end development with Java/Spring, assisting in API builds and database integrations for core products."
+      ]
+    },
+    {
+      "title": "Lead Full Stack Web Developer",
+      "company": "Purdue University",
+      "startDate": "Mar 2015",
+      "endDate": "Dec 2016",
+      "highlights": [
+        "Developed, tested, and maintained Risque—an enterprise suite for Purdue's networking infrastructure—using C#, ASP.NET, and Microsoft SQL Server to document and manage campus systems.",
+        "Created and optimized complex SQL queries, enhancing data retrieval efficiency for infrastructure management.",
+        "Built responsive web pages with ASP.NET, HTML5, and CSS3, improving user accessibility across diverse devices."
+      ]
+    },
+    {
+      "title": "Signals Intelligence Analyst & Cavalry Scout / Scout Team Leader",
+      "company": "US Army - Airborne / Jumpmaster",
+      "startDate": "Feb 2006",
+      "endDate": "Jul 2013",
+      "highlights": [
+        "Led Reconnaissance (Scout) and Signals Intelligence (SIGINT) teams, utilizing advanced data analysis and surveillance to track and target high-value assets during combat deployments (Afghanistan, Operation Iraqi Freedom).",
+        "Led combat patrols and security operations built discipline in ambiguous, high-pressure environments.",
+        "Supervised SIGINT/EW operations, analyzing foreign communications to produce combat, strategic, and tactical reports. Led analysis teams in real-time data processing, honing skills in pattern recognition and rapid reporting transferable to software debugging and optimization."
+      ]
+    }
+  ],
+  "skills": {
+    "Languages & Frameworks": [
+      "Java (Spring Boot)",
+      "TypeScript / Javascript",
+      "Angular (incl. NgRx)",
+      "C#",
+      "ASP.NET"
+    ],
+    "Data & Cloud": [
+      "SQL Server",
+      "PostgreSQL",
+      "AWS (microservices orchestration)",
+      "Microsoft SQL Server"
+    ],
+    "AI & DevOps": [
+      "GitHub Copilot",
+      "Agentic AI",
+      "Agile/Scrum",
+      "CI/CD (GitHub Actions, Bamboo)",
+      "DataDog"
+    ],
+    "Engineering Leadership": [
+      "Technical Standards & Roadmap",
+      "Multi-Layered System Design",
+      "Legacy System Modernization (monolith-to-microservices)",
+      "Agentic AI",
+      "Cross-Functional Team Leadership"
+    ]
+  },
+  "education": [
+    {
+      "school": "Purdue University",
+      "degree": "Bachelor of Science",
+      "field": "Computer & Information Technology",
+      "graduationDate": "2013-2016",
+      "details": "Emphasis on Software Engineering. Minor in Communication. Dean's List & Semester Honors"
+    }
+  ]
+}
