@@ -1,29 +1,49 @@
-import { Accordion, AccordionSummary, AccordionDetails, Box } from '@mui/material';
+import { Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import resumeData from '../data/resume.json';
 import type { WorkExperience } from '../types/resume'
 
 export default function Experience() {
   return (
-    <section style={{ py: 3, borderBottom: '1px solid #e0e0e0' }}>
-      <h2 style={{ fontSize: '1.875rem', fontWeight: 'bold', marginBottom: '2rem' }}>
+    <section className="py-6 border-b border-gray-200">
+      <h2 className="text-3xl font-bold mb-8 text-gray-900">
         Professional Experience
       </h2>
-      <Box>
-        {resumeData.experience.map((job: WorkExperience) => (
-          <Accordion key={job.title} defaultExpanded={job === resumeData.experience[0]}>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Box>
-                <h3 style={{ fontSize: '1.25rem', fontWeight: 'bold' }}>{job.title}</h3>
-                <p style={{ color: '#666' }}>
-                  {job.company} • {job.startDate} - {job.endDate}
+      <div className="space-y-4">
+        {resumeData.experience.map((job: WorkExperience, index) => (
+          <Accordion
+            key={`${job.company}-${job.title}`}
+            defaultExpanded={index === 0}
+            className="shadow-sm border border-gray-100 rounded-lg overflow-hidden before:hidden"
+            disableGutters
+            elevation={0}
+            sx={{
+              '&.MuiAccordion-root': {
+                backgroundColor: 'white',
+                border: '1px solid #f3f4f6', // gray-100
+                borderRadius: '0.5rem',
+                marginBottom: '1rem',
+                '&:before': {
+                  display: 'none',
+                },
+              },
+            }}
+          >
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon className="text-gray-500" />}
+              className="bg-gray-50 hover:bg-gray-100 transition-colors"
+            >
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center w-full pr-4">
+                <h3 className="text-lg font-bold text-gray-900">{job.title}</h3>
+                <p className="text-gray-600 text-sm sm:text-base">
+                  <span className="font-medium text-gray-800">{job.company}</span> • {job.startDate} - {job.endDate}
                 </p>
-              </Box>
+              </div>
             </AccordionSummary>
-            <AccordionDetails>
-              <ul style={{ margin: 0, paddingLeft: '1.5rem' }}>
+            <AccordionDetails className="bg-white p-6">
+              <ul className="list-disc pl-5 space-y-2">
                 {job.highlights.map((highlight, index) => (
-                  <li key={index} style={{ marginBottom: '0.75rem', color: '#333' }}>
+                  <li key={index} className="text-gray-700 leading-relaxed text-sm sm:text-base">
                     {highlight}
                   </li>
                 ))}
@@ -31,7 +51,7 @@ export default function Experience() {
             </AccordionDetails>
           </Accordion>
         ))}
-      </Box>
+      </div>
     </section>
   );
 }

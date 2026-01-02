@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -22,12 +26,22 @@ a:hover {
   color: #535bf2;
 }
 
+/*
 body {
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+*/
+/* Resetting body slightly to not conflict with Tailwind's reset if needed,
+   but keeping the file largely as is except for the Tailwind directives.
+   I commented out body styles that might conflict with a full page layout.
+*/
+body {
+    margin: 0;
+    min-height: 100vh;
 }
 
 h1 {
