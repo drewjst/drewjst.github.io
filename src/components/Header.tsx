@@ -1,4 +1,3 @@
-import { Card, Box, Stack, Link as MuiLink } from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -7,38 +6,38 @@ import resumeData from '../data/resume.json';
 
 export default function Header() {
   return (
-    <Box component="header" sx={{ py: 3, borderBottom: '1px solid #e0e0e0' }}>
-      <Box>
-        <h1 style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '0.5rem' }}>
+    <header className="py-6 border-b border-gray-200">
+      <div>
+        <h1 className="text-4xl font-bold mb-2 text-gray-900">
           {resumeData.name}
         </h1>
-        <p style={{ fontSize: '1.25rem', color: '#666', marginBottom: '1rem' }}>
+        <p className="text-xl text-gray-600 mb-4">
           {resumeData.title}
         </p>
 
         {/* Contact Info */}
-        <Stack direction="row" spacing={2} sx={{ mb: 2, flexWrap: 'wrap', alignItems: 'center' }}>
-          <MuiLink href={`mailto:${resumeData.contact.email}`} underline="hover" sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+        <div className="flex flex-wrap items-center gap-4 mb-6">
+          <a href={`mailto:${resumeData.contact.email}`} className="flex items-center gap-1 text-blue-600 hover:text-blue-800 transition-colors hover:underline">
             <EmailIcon fontSize="small" /> {resumeData.contact.email}
-          </MuiLink>
-          <MuiLink href={`tel:${resumeData.contact.phone}`} underline="hover" sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+          </a>
+          <a href={`tel:${resumeData.contact.phone}`} className="flex items-center gap-1 text-blue-600 hover:text-blue-800 transition-colors hover:underline">
             <PhoneIcon fontSize="small" /> {resumeData.contact.phone}
-          </MuiLink>
-          <MuiLink href={resumeData.contact.github} target="_blank" underline="hover" sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+          </a>
+          <a href={resumeData.contact.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-blue-600 hover:text-blue-800 transition-colors hover:underline">
             <GitHubIcon fontSize="small" /> GitHub
-          </MuiLink>
-          <MuiLink href={resumeData.contact.linkedin} target="_blank" underline="hover" sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+          </a>
+          <a href={resumeData.contact.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-blue-600 hover:text-blue-800 transition-colors hover:underline">
             <LinkedInIcon fontSize="small" /> LinkedIn
-          </MuiLink>
-        </Stack>
+          </a>
+        </div>
 
         {/* Summary Card */}
-        <Card sx={{ p: 2, bgcolor: '#f5f5f5' }}>
-          <p style={{ color: '#333', lineHeight: '1.6', fontSize: '0.875rem' }}>
+        <div className="p-6 bg-white rounded-lg shadow-sm border border-gray-100">
+          <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
             {resumeData.summary}
           </p>
-        </Card>
-      </Box>
-    </Box>
+        </div>
+      </div>
+    </header>
   );
 }

@@ -1,21 +1,10 @@
-import { Box } from '@mui/material';
-
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   
   return (
-    <Box
-      component="footer"
-      sx={{
-        py: 2,
-        textAlign: 'center',
-        fontSize: '0.875rem',
-        color: '#666',
-        borderTop: '1px solid #e0e0e0',
-      }}
-    >
+    <footer className="py-6 text-center text-sm text-gray-500 border-t border-gray-200 mt-8">
       <p>© {currentYear} All rights reserved.</p>
-      <p style={{ mt: 1 }}>Built with React • Material UI</p>
-    </Box>
+      <p className="mt-2">Built with React • Tailwind CSS</p>
+    </footer>
   );
 }

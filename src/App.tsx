@@ -1,5 +1,4 @@
 import './App.css'
-import { Container, Box } from '@mui/material'
 import Header from './components/Header'
 import Experience from './components/Experience'
 import Skills from './components/Skills'
@@ -9,15 +8,15 @@ import './styles/print.css'
 
 function App() {
   return (
-    <Box sx={{ minHeight: '100vh', bgcolor: '#fff' }}>
-      <Container maxWidth="md" sx={{ py: 2 }}>
+    <div className="min-h-screen bg-gray-50 text-gray-900 font-sans">
+      <div className="max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
         <Header />
         <Experience />
         <Skills />
         <Education />
         <Footer />
-      </Container>
-    </Box>
+      </div>
+    </div>
   )
 }
 

@@ -1,29 +1,28 @@
-import { Box, Card } from '@mui/material';
 import resumeData from '../data/resume.json';
 
 export default function Education() {
   return (
-    <section style={{ py: 3, borderBottom: '1px solid #e0e0e0' }}>
-      <h2 style={{ fontSize: '1.875rem', fontWeight: 'bold', marginBottom: '2rem' }}>
+    <section className="py-6 border-b border-gray-200">
+      <h2 className="text-3xl font-bold mb-8 text-gray-900">
         Education
       </h2>
       
-      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+      <div className="flex flex-col gap-6">
         {resumeData.education.map((degree, index) => (
-          <Box key={index}>
-            <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', mb: 1 }}>
-              <Box>
-                <h3 style={{ fontSize: '1.25rem', fontWeight: 'bold' }}>
+          <div key={index} className="flex flex-col">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
+              <div>
+                <h3 className="text-lg font-bold text-gray-900">
                   {degree.degree} in {degree.field}
                 </h3>
-                <p style={{ color: '#666' }}>{degree.school}</p>
-              </Box>
-              <p style={{ color: '#666', fontSize: '0.875rem' }}>{degree.graduationDate}</p>
-            </Box>
-            {degree.details && <p style={{ color: '#666', fontSize: '0.875rem' }}>{degree.details}</p>}
-          </Box>
+                <p className="text-gray-600">{degree.school}</p>
+              </div>
+              <p className="text-gray-500 text-sm mt-1 sm:mt-0">{degree.graduationDate}</p>
+            </div>
+            {degree.details && <p className="text-gray-500 text-sm">{degree.details}</p>}
+          </div>
         ))}
-      </Box>
+      </div>
     </section>
   );
 }

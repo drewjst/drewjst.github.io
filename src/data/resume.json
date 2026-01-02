@@ -15,11 +15,13 @@
       "startDate": "Aug 2023",
       "endDate": "Present",
       "highlights": [
-        "Acted as a technical leader in the Small Commercial Products Tech team, guiding the development of system, technical, and product standards while leading the end-to-end delivery of flagship products, including the current build of the new Workers Comp product on a modern scalable stack (Angular/TypeScript + Java/Spring).",
+        "Spearheaded technical leadership for the Small Commercial Products Tech team, guiding the development of system, technical, and product standards while leading the end-to-end delivery of flagship products, including the current build of the new Workers Comp product on a modern scalable stack (Angular/TypeScript + Java/Spring).",
         "Shipped multiple products and enhancements, delivering across the small commercial portfolio (BOP, Commercial Package, Simple BOP, Auto), consistently enhancing core functionality with zero major disruptions.",
-        "Implemented Angular + NgRx for predictable data flows and scalable state management, streamlining front-end development and reducing UI bugs by establishing reusable patterns.",
-        "Integrated third-party APIs to extend interoperability and cross-system workflows; leveraged GitHub Copilot and agentic AI to author production-ready, performant code 20–30% faster, saving team time on routine tasks while upholding quality standards in scalable environments.",
-        "Collaborated directly with Product Management and Architecture to define the long-term technical roadmap for key systems, strategically planning incremental migrations and ensuring alignment with enterprise-wide cloud goals."
+        "Led the cross-functional adoption of the ISO 2026 Classification System, making critical architectural decisions that enabled portfolio growth without disrupting existing high-volume workflows.",
+        "Spearheaded the architectural design of a cloud-native distributed microservices platform, guiding multiple teams in the adoption of an event-driven enrichment pattern; established asynchronous ‘listeners’ as the technical standard for real-time data ingestion, which improved data integrity and reduced frontend latency.",
+        "Led GitHub migrations and legacy refactoring in regulated insurance, directing secure API designs and compliance enhancements—boosting developer productivity 25% and resilience for commercial products.",
+        "Force Multiplication via AI: Led a cross-functional pilot for Agentic AI integration, establishing technical standards that reduced total time-to-market for new features by 30% across the department.",
+        "Implemented Angular + NgRx for predictable data flows and scalable state management, streamlining front-end development and reducing UI bugs by establishing reusable patterns."
       ]
     },
     {
