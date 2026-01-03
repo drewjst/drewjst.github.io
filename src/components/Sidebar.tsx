@@ -23,7 +23,7 @@ export default function Sidebar() {
       <div className="flex flex-col gap-3 text-sm">
         <div className="flex items-center gap-2 text-zed-text">
           <LocationOnIcon fontSize="small" className="text-zed-muted" />
-          <span>Durham, NC</span>
+          <span>Mount Vernon, WA</span>
         </div>
 
         <a
