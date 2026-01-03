@@ -39,80 +39,85 @@ graph LR
 
 ## This Resume Application - Architecture & Design
 
-This resume is a **production-quality React application** demonstrating modern full-stack development principles using **Material-UI** for enterprise-grade styling.
+This resume is a **production-quality React application** demonstrating modern full-stack development principles using **Tailwind CSS** for utility-first, responsive styling and **Vite** for optimized builds.
+
+### Tech Stack
+
+| Layer | Technology | Purpose |
+|-------|-----------|---------|
+| **Framework** | React 19 | Modern UI component library with concurrent rendering |
+| **Language** | TypeScript 5.9 | Static type checking for reliability and developer experience |
+| **Styling** | Tailwind CSS 3.4 | Utility-first CSS framework with custom Zed theme |
+| **Build Tool** | Vite 7 | Ultra-fast development and optimized production builds |
+| **CSS Processing** | PostCSS + Autoprefixer | Standards-based CSS transformations and browser compatibility |
+| **Linting** | ESLint 9 | Code quality and consistency checks |
+| **Deployment** | GitHub Pages | Free, fast, version-controlled hosting |
 
 ### Project Structure & Benefits
 
 ```
-the-resume/
-├── src/
-│   ├── components/           # Isolated, reusable UI components
-│   │   ├── Header.tsx        # Professional header with contact
-│   │   ├── Experience.tsx    # Expandable accordion job history
-│   │   ├── Skills.tsx        # Categorized skills with chips
-│   │   ├── Education.tsx     # Education summary
-│   │   └── Footer.tsx        # Footer attribution
-│   ├── data/
-│   │   └── resume.json       # Single source of truth
-│   ├── types/
-│   │   └── resume.ts         # TypeScript interfaces
-│   ├── styles/
-│   │   └── print.css         # PDF export styling
-│   └── App.tsx               # Main application
+src/
+├── components/              # Isolated, reusable React components
+│   ├── Sidebar.tsx         # Profile sidebar (sticky on desktop)
+│   ├── CompanyHeader.tsx   # Company information display
+│   ├── Experience.tsx      # Expandable work history
+│   ├── Skills.tsx          # Categorized technical skills
+│   ├── Education.tsx       # Educational background
+│   ├── Projects.tsx        # Notable projects
+│   └── Footer.tsx          # Footer attribution
+├── data/
+│   └── resume.json         # Single source of truth for all content
+├── types/
+│   └── resume.ts           # TypeScript type definitions
+├── styles/
+│   ├── print.css           # Print/PDF optimization
+│   ├── index.css           # Global styles and Tailwind
+│   └── App.css             # Component-specific styles
+├── assets/                 # Images and static files
+└── App.tsx                 # Main application component
 ```
 
-#### **Why This Architecture?**
+#### **Design Principles**
 
-**1. Component-Based Design**
-- Each section is self-contained and reusable
-- Easy to add new sections (e.g., Projects, Certifications)
-- Changes in one component don't cascade through the app
-- Perfect for scaling to larger applications
+**1. Component-Based Architecture**
+- Each section is self-contained and independently reusable
+- Changes are isolated, reducing ripple effects
+- Easy to extend with new components (Projects, Certifications, etc.)
+- Clean separation of concerns
 
-**2. Data-Driven System**
-- All content lives in `resume.json` - change data, not code
-- Components automatically reflect updates
-- Easy to export data to different formats (PDF, JSON API, etc.)
-- Separates content from presentation
+**2. Data-Driven Content**
+- All resume content lives in `resume.json` - **no hardcoded text**
+- Components automatically reflect data updates
+- Easy to export data to other formats (API, PDF, etc.)
+- Single source of truth for maintainability
 
 **3. Type Safety (TypeScript)**
-- Prevents bugs at compile time, not runtime
-- IDE provides autocomplete and documentation
-- Self-documenting code through interfaces
-- Safer refactoring with compile-time checks
+- Compile-time error detection prevents runtime bugs
+- IDE autocomplete and inline documentation
+- Self-documenting code through TypeScript interfaces
+- Confident refactoring with full type checking
 
-**4. Material-UI (Enterprise Design)**
-- Professional, polished look out of the box
-- WCAG accessible components
-- 2000+ icons for rich visual design
-- Responsive grid system for all devices
-- Customizable theming
+**4. Responsive Design (Tailwind CSS)**
+- Mobile-first responsive utilities
+- Custom Zed color theme (inspired by Zed Editor)
+- Semantic color naming (`.text-zed-text`, `.bg-zed-surface`)
+- Monospace typography throughout (Fira Code font)
+- Flexible spacing and layout helpers
 
-**5. Performance**
-- **Vite**: Lightning-fast builds and hot reload
-- **Tree Shaking**: Unused code automatically removed
-- **Code Splitting**: Only load what's needed
-- **Optimized Bundle**: <50KB gzipped for production
+**5. Performance Optimizations**
+- **Vite**: Instant hot-module replacement in development
+- **Tree Shaking**: Automatic unused code removal in production
+- **Code Splitting**: Only load required modules
+- **Optimized Bundle**: Minimal gzipped output
+- **Lazy Loading**: Components load on demand
 
 **6. User Experience**
-- **Accordion Sections**: Expand/collapse for clean layout
-- **Responsive Design**: Perfect on mobile, tablet, desktop
-- **Print-Ready**: Ctrl+P exports as professional PDF
+- **Responsive Layout**: Fixed sidebar on desktop, stacked on mobile
+- **Print-Ready**: Professional PDF output with Ctrl+P
+- **Fast Navigation**: Smooth scrolling and instant interactions
+- **Accessible**: Semantic HTML and keyboard navigation
+- **Monospace Theme**: Clean, code-editor aesthetic
 - **Fast Loading**: Instant page load, smooth interactions
-
----
-
-## Technology Stack
-
-| Layer | Technology | Purpose |
-|-------|-----------|---------|
-| **Language** | TypeScript | Type-safe development |
-| **Framework** | React 19 | Component-based UI |
-| **UI Library** | Material-UI (MUI) | Enterprise components |
-| **Icons** | MUI Icons | Professional iconography |
-| **Styling** | MUI sx prop + CSS | Flexible styling |
-| **Bundler** | Vite | Fast builds & dev server |
-| **Package Mgr** | npm | Dependency management |
 
 ---
 
@@ -135,14 +140,14 @@ npm run build
 
 ## Key Features
 
-✅ **Responsive** - Mobile-first, all screen sizes  
-✅ **Interactive** - Expandable sections, smooth UX  
-✅ **Type-Safe** - Full TypeScript, zero runtime type errors  
-✅ **Data-Driven** - Single source of truth in JSON  
-✅ **Print-Friendly** - Export as PDF with one click  
-✅ **Fast** - Optimized build, instant loads  
-✅ **Accessible** - WCAG compliant, screen reader support  
-✅ **Professional** - Enterprise-grade Material-UI design  
+✅ **Responsive Design** - Mobile-first with Tailwind CSS utilities  
+✅ **Interactive Components** - Expandable sections, smooth interactions  
+✅ **Type-Safe** - Full TypeScript for runtime reliability  
+✅ **Data-Driven Architecture** - Single JSON source of truth  
+✅ **Print-Optimized** - Export as professional PDF with Ctrl+P  
+✅ **Lightning Fast** - Vite build, optimized production bundles  
+✅ **Accessible** - Semantic HTML, keyboard navigation  
+✅ **Custom Theme** - Zed editor-inspired monospace aesthetic  
 
 ---
 

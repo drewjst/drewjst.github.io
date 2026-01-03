@@ -31,7 +31,7 @@
       "endDate": "Aug 2023",
       "highlights": [
         "Built robust, scalable full-stack web applications using Angular for front-end and Java/Spring Boot for back-end, supporting agile sprints that delivered high-quality solutions on time for insurance product enhancements.",
-        "Designed multithreaded/async Java algorithms to boost search responsiveness and UX, resulting in materially faster query times for high-volume insurance workflows.",
+        "Performance Engineering: Engineered multithreaded and asynchronous Java algorithms that significantly improved search responsiveness and UX for high-transaction insurance workflows.",
         "Committed to professional growth by tracking industry trends, attending conferences, and sharing knowledge via internal workshops, mentoring juniors to boost team-wide adoption of best practices."
       ]
     },
@@ -41,9 +41,9 @@
       "startDate": "Dec 2017",
       "endDate": "April 2020",
       "highlights": [
-        "Developed and optimized full-stack features in enterprise insurance systems, focusing on performance and scalability to handle increasing transaction volumes.",
-        "Contributed to agile teams in refactoring legacy codebases, improving system reliability and developer productivity.",
-        "Supported back-end development with Java/Spring, assisting in API builds and database integrations for core products."
+        "Pioneered early innovations in simplifying small commercial insurance workflows, conceiving and developing core features that launched Simple BOP—rapidly becoming the primary growth driver for the small commercial portfolio.",
+        "Developed and optimized full-stack features for enterprise insurance systems, enhancing performance and scalability to support growing transaction volumes.",
+        "Collaborated on agile refactoring of legacy codebases, improving reliability and long-term maintainability."
       ]
     },
     {
@@ -52,9 +52,9 @@
       "startDate": "Mar 2015",
       "endDate": "Dec 2016",
       "highlights": [
-        "Developed, tested, and maintained Risque—an enterprise suite for Purdue's networking infrastructure—using C#, ASP.NET, and Microsoft SQL Server to document and manage campus systems.",
+        "Built and maintained Risque, an enterprise infrastructure management suite in C#/ASP.NET with SQL Server back-end.",
         "Created and optimized complex SQL queries, enhancing data retrieval efficiency for infrastructure management.",
-        "Built responsive web pages with ASP.NET, HTML5, and CSS3, improving user accessibility across diverse devices."
+        "Optimized complex SQL queries and delivered responsive web interfaces, improving data accessibility and user experience across devices."
       ]
     },
     {
@@ -63,9 +63,9 @@
       "startDate": "Feb 2006",
       "endDate": "Jul 2013",
       "highlights": [
-        "Led Reconnaissance (Scout) and Signals Intelligence (SIGINT) teams, utilizing advanced data analysis and surveillance to track and target high-value assets during combat deployments (Afghanistan, Operation Iraqi Freedom).",
-        "Led combat patrols and security operations built discipline in ambiguous, high-pressure environments.",
-        "Supervised SIGINT/EW operations, analyzing foreign communications to produce combat, strategic, and tactical reports. Led analysis teams in real-time data processing, honing skills in pattern recognition and rapid reporting transferable to software debugging and optimization."
+        "Systems Intelligence: Led SIGINT and Reconnaissance teams in high-pressure combat environments, utilizing pattern recognition and real-time data analysis—skills directly applied today to complex system debugging and architectural optimization.",
+        "Leadership under Pressure: As a Jumpmaster and Scout Team Leader, managed mission-critical operations where precision and clarity were paramount, fostering a \"mission-first\" engineering mindset.",
+        "Operation Iraqi Freedom (2006–2008) and Operation Enduring Freedom (2011–2012)."
       ]
     }
   ],
