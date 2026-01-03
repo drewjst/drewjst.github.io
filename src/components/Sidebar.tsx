@@ -8,7 +8,7 @@ import resumeData from '../data/resume.json';
 
 export default function Sidebar() {
   return (
-    <aside className="w-full md:w-80 flex-shrink-0 flex flex-col gap-6 md:border-r border-zed-border p-6 bg-zed-bg">
+    <aside className="w-full md:w-96 flex-shrink-0 flex flex-col gap-6 md:border-r border-zed-border p-6 bg-zed-bg">
       {/* Profile / Name */}
       <div>
         <h1 className="text-2xl font-bold text-zed-text">
@@ -66,8 +66,32 @@ export default function Sidebar() {
         </a>
       </div>
 
+      {/* Unit Patches */}
+      <div className="flex flex-col items-center gap-4 py-4 mt-auto">
+        <img
+          src="/images/82nd.png"
+          alt="82nd Airborne Division"
+          className="w-16 h-16 object-contain opacity-80 hover:opacity-100 transition-opacity"
+          title="82nd Airborne Division"
+        />
+        <div className="w-12 border-t border-zed-border" />
+        <img
+          src="/images/25th.jpg"
+          alt="25th Infantry Division"
+          className="w-16 h-16 object-contain opacity-80 hover:opacity-100 transition-opacity"
+          title="25th Infantry Division"
+        />
+        <div className="w-12 border-t border-zed-border" />
+        <img
+          src="/images/11th.jpg"
+          alt="11th Airborne Division"
+          className="w-16 h-16 object-contain opacity-80 hover:opacity-100 transition-opacity"
+          title="11th Airborne Division"
+        />
+      </div>
+
       {/* Download Resume */}
-      <div className="mt-auto">
+      <div>
         <a
           href="/resume.pdf"
           download

@@ -1,7 +1,41 @@
 import { Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import React from 'react';
 import resumeData from '../data/resume.json';
 import type { WorkExperience } from '../types/resume'
+
+const parseHighlight = (text: string) => {
+  const parts = [];
+  let lastIndex = 0;
+  // Regex to match markdown-style links: [text](url)
+  const regex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  let match;
+
+  while ((match = regex.exec(text)) !== null) {
+    // Push text before the link
+    if (match.index > lastIndex) {
+      parts.push(text.substring(lastIndex, match.index));
+    }
+    // Push the link component
+    parts.push(
+      <a
+        key={match.index}
+        href={match[2]}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-zed-accent underline hover:text-zed-text"
+      >
+        {match[1]}
+      </a>
+    );
+    lastIndex = regex.lastIndex;
+  }
+  // Push remaining text
+  if (lastIndex < text.length) {
+    parts.push(text.substring(lastIndex));
+  }
+  return parts.length > 0 ? parts : text;
+};
 
 export default function Experience() {
   return (
@@ -55,7 +89,7 @@ export default function Experience() {
               <ul className="list-none space-y-2 pl-2 border-l border-zed-border ml-1">
                 {job.highlights.map((highlight, index) => (
                   <li key={index} className="text-zed-text text-sm leading-relaxed relative pl-4 before:content-['-'] before:absolute before:left-0 before:text-zed-muted">
-                    {highlight}
+                    {parseHighlight(highlight)}
                   </li>
                 ))}
               </ul>
