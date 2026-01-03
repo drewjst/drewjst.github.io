@@ -8,7 +8,7 @@ import resumeData from '../data/resume.json';
 
 export default function Sidebar() {
   return (
-    <aside className="w-full md:w-64 flex-shrink-0 flex flex-col gap-6 md:border-r border-zed-border p-6 bg-zed-bg">
+    <aside className="w-full md:w-80 flex-shrink-0 flex flex-col gap-6 md:border-r border-zed-border p-6 bg-zed-bg">
       {/* Profile / Name */}
       <div>
         <h1 className="text-2xl font-bold text-zed-text">
