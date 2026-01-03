@@ -5,45 +5,56 @@ import type { WorkExperience } from '../types/resume'
 
 export default function Experience() {
   return (
-    <section className="py-6 border-b border-gray-200">
-      <h2 className="text-3xl font-bold mb-8 text-gray-900">
-        Professional Experience
+    <section>
+      <h2 className="text-xl font-bold mb-6 text-zed-text border-b border-zed-border pb-2">
+        EXPERIENCE
       </h2>
       <div className="space-y-4">
         {resumeData.experience.map((job: WorkExperience, index) => (
           <Accordion
             key={`${job.company}-${job.title}`}
             defaultExpanded={index === 0}
-            className="shadow-sm border border-gray-100 rounded-lg overflow-hidden before:hidden"
             disableGutters
             elevation={0}
+            square
             sx={{
+              backgroundColor: 'transparent',
+              border: 'none',
+              boxShadow: 'none',
               '&.MuiAccordion-root': {
-                backgroundColor: 'white',
-                border: '1px solid #f3f4f6', // gray-100
-                borderRadius: '0.5rem',
-                marginBottom: '1rem',
-                '&:before': {
-                  display: 'none',
-                },
+                backgroundColor: 'transparent',
+                backgroundImage: 'none',
+                boxShadow: 'none',
+                '&:before': { display: 'none' },
+                margin: 0,
               },
             }}
           >
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon className="text-gray-500" />}
-              className="bg-gray-50 hover:bg-gray-100 transition-colors"
+              expandIcon={<ExpandMoreIcon className="text-zed-muted" />}
+              sx={{
+                padding: '0',
+                minHeight: 'auto',
+                '& .MuiAccordionSummary-content': { margin: '8px 0' },
+                '&:hover': { backgroundColor: 'transparent' }
+              }}
             >
-              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center w-full pr-4">
-                <h3 className="text-lg font-bold text-gray-900">{job.title}</h3>
-                <p className="text-gray-600 text-sm sm:text-base">
-                  <span className="font-medium text-gray-800">{job.company}</span> • {job.startDate} - {job.endDate}
+              <div className="flex flex-col w-full pr-4">
+                <div className="flex justify-between items-baseline mb-1">
+                  <h3 className="text-lg font-bold text-zed-text">{job.title}</h3>
+                  <span className="text-zed-muted text-sm shrink-0 ml-4">
+                    {job.startDate} — {job.endDate}
+                  </span>
+                </div>
+                <p className="text-zed-accent text-sm font-medium">
+                  {job.company}
                 </p>
               </div>
             </AccordionSummary>
-            <AccordionDetails className="bg-white p-6">
-              <ul className="list-disc pl-5 space-y-2">
+            <AccordionDetails sx={{ padding: '0 0 16px 0' }}>
+              <ul className="list-none space-y-2 pl-2 border-l border-zed-border ml-1">
                 {job.highlights.map((highlight, index) => (
-                  <li key={index} className="text-gray-700 leading-relaxed text-sm sm:text-base">
+                  <li key={index} className="text-zed-text text-sm leading-relaxed relative pl-4 before:content-['-'] before:absolute before:left-0 before:text-zed-muted">
                     {highlight}
                   </li>
                 ))}

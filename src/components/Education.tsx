@@ -2,24 +2,29 @@ import resumeData from '../data/resume.json';
 
 export default function Education() {
   return (
-    <section className="py-6 border-b border-gray-200">
-      <h2 className="text-3xl font-bold mb-8 text-gray-900">
-        Education
+    <section>
+      <h2 className="text-xl font-bold mb-6 text-zed-text border-b border-zed-border pb-2">
+        EDUCATION
       </h2>
-      
-      <div className="flex flex-col gap-6">
-        {resumeData.education.map((degree, index) => (
-          <div key={index} className="flex flex-col">
-            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
-              <div>
-                <h3 className="text-lg font-bold text-gray-900">
-                  {degree.degree} in {degree.field}
-                </h3>
-                <p className="text-gray-600">{degree.school}</p>
-              </div>
-              <p className="text-gray-500 text-sm mt-1 sm:mt-0">{degree.graduationDate}</p>
+      <div className="space-y-6">
+        {resumeData.education.map((edu, index) => (
+          <div key={index}>
+            <div className="flex justify-between items-baseline mb-1">
+              <h3 className="text-lg font-bold text-zed-text">
+                {edu.school}
+              </h3>
+              <span className="text-zed-muted text-sm">
+                {edu.graduationDate}
+              </span>
             </div>
-            {degree.details && <p className="text-gray-500 text-sm">{degree.details}</p>}
+            <div className="text-sm text-zed-text mb-2">
+              <span className="font-medium text-zed-accent">{edu.degree}</span> in {edu.field}
+            </div>
+            {edu.details && (
+              <p className="text-sm text-zed-muted italic">
+                {edu.details}
+              </p>
+            )}
           </div>
         ))}
       </div>
