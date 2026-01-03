@@ -18,7 +18,7 @@ function App() {
         <div className="max-w-4xl mx-auto p-6 md:p-12">
           {/* Quick summary check at top for mobile context or just intro */}
           <div className="mb-8">
-             <p className="text-zed-text leading-relaxed max-w-2xl">
+             <p className="text-zed-text leading-relaxed">
                {resumeData.summary}
              </p>
           </div>

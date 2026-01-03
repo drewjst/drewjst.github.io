@@ -5,7 +5,7 @@
     "email": "drew.jst@gmail.com",
     "phone": "xxx.xxx.2841",
     "github": "https://github.com/drewjst?tab=repositories",
-    "linkedin": "www.linkedin.com/in/andrew-stalker-7b642778"
+    "linkedin": "https://www.linkedin.com/in/andrew-stalker-7b642778"
   },
   "summary": "Mission-driven Principal Software Engineer and US Army Veteran with 9+ years of experience leading large-scale digital transformations in high-stakes environments. Expert in modernizing legacy insurance monoliths into cloud-native microservices while maintaining zero-downtime tolerance. Architect of high-velocity development cultures, leveraging Agentic AI to accelerate delivery by 30%. Proven in high-pressure environments—from Army deployments to production launches—delivering scalable solutions that prioritize clarity, iteration, and efficiency.",
   "experience": [
@@ -65,37 +65,36 @@
       "highlights": [
         "Systems Intelligence: Led SIGINT and Reconnaissance teams in high-pressure combat environments, utilizing pattern recognition and real-time data analysis—skills directly applied today to complex system debugging and architectural optimization.",
         "Leadership under Pressure: As a Jumpmaster and Scout Team Leader, managed mission-critical operations where precision and clarity were paramount, fostering a \"mission-first\" engineering mindset.",
-        "Operation Iraqi Freedom (2006–2008) and Operation Enduring Freedom (2011–2012)."
+        "Operation Iraqi Freedom (2006–2008) and Operation Enduring Freedom (2011–2012). [Additional Context](https://en.wikipedia.org/wiki/Iraq_War_troop_surge_of_2007)"
       ]
     }
   ],
   "skills": {
+    "Engineering Leadership": [
+      "Distributed Systems",
+      "Multi-Layered System Design",
+      "Legacy System Modernization",
+      "Cross-Functional Team Leadership & Mentoring"
+    ],
     "Languages & Frameworks": [
       "Java (Spring Boot)",
-      "TypeScript / Javascript",
-      "Angular (incl. NgRx)",
-      "C#",
-      "ASP.NET"
+      "Kotlin",
+      "TypeScript/JavaScript (React, Angular/NgRx)",
+      "C# (.NET)"
     ],
-    "Data & Cloud": [
-      "SQL Server",
+    "Infrastructure & Data": [
+      "AWS (EC2, RDS)",
+      "GCP",
       "PostgreSQL",
-      "AWS (microservices orchestration)",
-      "Microsoft SQL Server"
+      "SQL Server",
+      "Datadog",
+      "Splunk"
     ],
-    "AI & DevOps": [
+    "DevOps & Tools": [
+      "CI/CD (GitHub Actions, Bamboo)",
       "GitHub Copilot",
       "Agentic AI",
-      "Agile/Scrum",
-      "CI/CD (GitHub Actions, Bamboo)",
-      "DataDog"
-    ],
-    "Engineering Leadership": [
-      "Technical Standards & Roadmap",
-      "Multi-Layered System Design",
-      "Legacy System Modernization (monolith-to-microservices)",
-      "Agentic AI",
-      "Cross-Functional Team Leadership"
+      "Agile/Scrum"
     ]
   },
   "education": [
