@@ -28,77 +28,46 @@ graph LR
     style F fill:#fff9e8
 ```
 
-### Career Progression Summary
-
-- **Military to Tech (2006-2013)**: Developed discipline, pattern recognition, and decision-making under pressure
-- **Education & Early Work (2013-2020)**: Built strong technical foundation with enterprise experience
-- **Technical Growth (2020-2023)**: Advanced from individual contributor to senior engineer, mastering complex systems
-- **Technical Leadership (2023-Present)**: Leading teams, defining technical strategy, and driving organizational modernization
-
----
-
 ## This Resume Application - Architecture & Design
 
-This resume is a **production-quality React application** demonstrating modern full-stack development principles using **Material-UI** for enterprise-grade styling.
+This resume is a **production-quality React application** designed with a **"Zed" Editor Aesthetic**. It combines the utility of a standard resume with the visual language of a modern developer environment—clean, minimal, and code-centric.
 
-### Project Structure & Benefits
+### Project Structure
 
 ```
 the-resume/
 ├── src/
-│   ├── components/           # Isolated, reusable UI components
-│   │   ├── Header.tsx        # Professional header with contact
-│   │   ├── Experience.tsx    # Expandable accordion job history
-│   │   ├── Skills.tsx        # Categorized skills with chips
+│   ├── components/
+│   │   ├── Sidebar.tsx       # Persistent sidebar with contact/socials
+│   │   ├── CompanyHeader.tsx # Quick-link chips for employers/education
+│   │   ├── Experience.tsx    # Clean, flat-design job history
+│   │   ├── Skills.tsx        # Categorized skill tags
 │   │   ├── Education.tsx     # Education summary
-│   │   └── Footer.tsx        # Footer attribution
+│   │   └── Footer.tsx        # Simple copyright footer
 │   ├── data/
 │   │   └── resume.json       # Single source of truth
 │   ├── types/
 │   │   └── resume.ts         # TypeScript interfaces
 │   ├── styles/
 │   │   └── print.css         # PDF export styling
-│   └── App.tsx               # Main application
+│   └── App.tsx               # Main layout (Sidebar + Content)
 ```
 
-#### **Why This Architecture?**
+### Design Philosophy: "The Zed Look"
 
-**1. Component-Based Design**
-- Each section is self-contained and reusable
-- Easy to add new sections (e.g., Projects, Certifications)
-- Changes in one component don't cascade through the app
-- Perfect for scaling to larger applications
+**1. Minimalist & Content-First**
+- **Fira Code Typography:** The entire application uses Fira Code, a monospaced font loved by developers, reinforcing the engineering focus.
+- **Light Theme Palette:** A custom Tailwind configuration defines the "Zed Light" theme—soft greys (`#fbfbfb` background), subtle borders (`#e5e5e5`), and high-contrast text (`#333333`).
+- **Flat Design:** Shadows and "cards" are replaced with clean lines and whitespace to mimic a code editor interface.
 
-**2. Data-Driven System**
-- All content lives in `resume.json` - change data, not code
-- Components automatically reflect updates
-- Easy to export data to different formats (PDF, JSON API, etc.)
-- Separates content from presentation
+**2. Modern Architecture**
+- **Sidebar Layout:** Key contact info and actions (like "Download PDF") are always accessible in a fixed sidebar (on desktop).
+- **Interactive Headers:** "Chip" style links provide quick access to external company pages.
+- **React + Tailwind CSS:** Built for speed and maintainability. Tailwind handles the utility-first styling, allowing for rapid iteration on the custom theme.
 
-**3. Type Safety (TypeScript)**
-- Prevents bugs at compile time, not runtime
-- IDE provides autocomplete and documentation
-- Self-documenting code through interfaces
-- Safer refactoring with compile-time checks
-
-**4. Material-UI (Enterprise Design)**
-- Professional, polished look out of the box
-- WCAG accessible components
-- 2000+ icons for rich visual design
-- Responsive grid system for all devices
-- Customizable theming
-
-**5. Performance**
-- **Vite**: Lightning-fast builds and hot reload
-- **Tree Shaking**: Unused code automatically removed
-- **Code Splitting**: Only load what's needed
-- **Optimized Bundle**: <50KB gzipped for production
-
-**6. User Experience**
-- **Accordion Sections**: Expand/collapse for clean layout
-- **Responsive Design**: Perfect on mobile, tablet, desktop
-- **Print-Ready**: Ctrl+P exports as professional PDF
-- **Fast Loading**: Instant page load, smooth interactions
+**3. Data-Driven & Type-Safe**
+- **JSON Data Source:** Content is separated from presentation in `resume.json`.
+- **TypeScript:** Ensures robust component logic and safe refactoring.
 
 ---
 
@@ -108,11 +77,10 @@ the-resume/
 |-------|-----------|---------|
 | **Language** | TypeScript | Type-safe development |
 | **Framework** | React 19 | Component-based UI |
-| **UI Library** | Material-UI (MUI) | Enterprise components |
+| **Styling** | Tailwind CSS v3 | Utility-first custom theming |
+| **Typography** | Fira Code | Developer-centric aesthetic |
 | **Icons** | MUI Icons | Professional iconography |
-| **Styling** | MUI sx prop + CSS | Flexible styling |
 | **Bundler** | Vite | Fast builds & dev server |
-| **Package Mgr** | npm | Dependency management |
 
 ---
 
@@ -135,25 +103,23 @@ npm run build
 
 ## Key Features
 
-✅ **Responsive** - Mobile-first, all screen sizes  
-✅ **Interactive** - Expandable sections, smooth UX  
-✅ **Type-Safe** - Full TypeScript, zero runtime type errors  
-✅ **Data-Driven** - Single source of truth in JSON  
-✅ **Print-Friendly** - Export as PDF with one click  
-✅ **Fast** - Optimized build, instant loads  
-✅ **Accessible** - WCAG compliant, screen reader support  
-✅ **Professional** - Enterprise-grade Material-UI design  
+✅ **Zed Editor Aesthetic** - Minimal, light theme, Fira Code font
+✅ **Responsive Layout** - Split-pane (Sidebar/Main) on desktop, stacked on mobile
+✅ **Type-Safe** - Full TypeScript integration
+✅ **Data-Driven** - Edit `resume.json` to update content
+✅ **Print-Friendly** - Styles optimized for PDF export
+✅ **Fast** - Vite-powered builds and instant loads
 
 ---
 
 ## Deployment
 
-Suitable for:
-- **GitHub Pages** - Free, automatic deployment
-- **Vercel** - Zero-config, preview deploys
-- **Netlify** - Drag-and-drop, built-in CI/CD
-- **AWS S3 + CloudFront** - Scalable, globally distributed
-- **Any static host** - Works with all CDNs
+Deployable to any static host (GitHub Pages, Vercel, Netlify).
+The project includes a `deploy` script for GitHub Pages:
+
+```bash
+npm run deploy
+```
 
 ---
 
@@ -163,4 +129,4 @@ Suitable for:
 
 ---
 
-*Built with React + Material-UI | Vite | TypeScript*
+*Built with React | Tailwind CSS | Vite | TypeScript*
