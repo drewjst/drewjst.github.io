@@ -2,10 +2,21 @@ import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import DownloadIcon from '@mui/icons-material/Download';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import { Box, Button, Divider, Stack, Chip } from '@mui/material';
+import { Divider, Stack, Chip } from '@mui/material';
+import styled from '@emotion/styled';
 import resumeData from '../data/resume.json';
+
+const PatchImage = styled.img`
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+  &:hover {
+    opacity: 1;
+  }
+`;
 
 export default function Sidebar() {
   return (
@@ -76,48 +87,33 @@ export default function Sidebar() {
 
       {/* Unit Patches */}
       <Stack spacing={2} alignItems="center" py={2} mt={4}>
-        <Box
-          component="img"
+        <PatchImage
           src="/images/82nd.png"
           alt="82nd Airborne Division"
-          sx={{
-            width: 90,
-            height: 90,
-            objectFit: 'contain',
-            opacity: 0.8,
-            transition: 'opacity 0.2s',
-            '&:hover': { opacity: 1 }
-          }}
+          loading="lazy"
+          decoding="async"
+          width={90}
+          height={90}
           title="82nd Airborne Division"
         />
         <Divider sx={{ width: '60%' }} />
-        <Box
-          component="img"
+        <PatchImage
           src="/images/25th.jpg"
           alt="25th Infantry Division"
-          sx={{
-            width: 90,
-            height: 90,
-            objectFit: 'contain',
-            opacity: 0.8,
-            transition: 'opacity 0.2s',
-            '&:hover': { opacity: 1 }
-          }}
+          loading="lazy"
+          decoding="async"
+          width={90}
+          height={90}
           title="25th Infantry Division"
         />
         <Divider sx={{ width: '60%' }} />
-        <Box
-          component="img"
+        <PatchImage
           src="/images/11th.jpg"
           alt="11th Airborne Division"
-          sx={{
-            width: 90,
-            height: 90,
-            objectFit: 'contain',
-            opacity: 0.8,
-            transition: 'opacity 0.2s',
-            '&:hover': { opacity: 1 }
-          }}
+          loading="lazy"
+          decoding="async"
+          width={90}
+          height={90}
           title="11th Airborne Division"
         />
       </Stack>
