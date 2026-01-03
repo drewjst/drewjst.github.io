@@ -70,32 +70,31 @@
     }
   ],
   "skills": {
+    "Engineering Leadership": [
+      "Distributed Systems",
+      "Multi-Layered System Design",
+      "Legacy System Modernization",
+      "Cross-Functional Team Leadership & Mentoring"
+    ],
     "Languages & Frameworks": [
       "Java (Spring Boot)",
-      "TypeScript / Javascript",
-      "Angular (incl. NgRx)",
-      "C#",
-      "ASP.NET"
+      "Kotlin",
+      "TypeScript/JavaScript (React, Angular/NgRx)",
+      "C# (.NET)"
     ],
-    "Data & Cloud": [
-      "SQL Server",
+    "Infrastructure & Data": [
+      "AWS (EC2, RDS)",
+      "GCP",
       "PostgreSQL",
-      "AWS (microservices orchestration)",
-      "Microsoft SQL Server"
+      "SQL Server",
+      "Datadog",
+      "Splunk"
     ],
-    "AI & DevOps": [
+    "DevOps & Tools": [
+      "CI/CD (GitHub Actions, Bamboo)",
       "GitHub Copilot",
       "Agentic AI",
-      "Agile/Scrum",
-      "CI/CD (GitHub Actions, Bamboo)",
-      "DataDog"
-    ],
-    "Engineering Leadership": [
-      "Technical Standards & Roadmap",
-      "Multi-Layered System Design",
-      "Legacy System Modernization (monolith-to-microservices)",
-      "Agentic AI",
-      "Cross-Functional Team Leadership"
+      "Agile/Scrum"
     ]
   },
   "education": [

@@ -4,7 +4,7 @@ export default function Skills() {
   return (
     <section>
       <h2 className="text-xl font-bold mb-6 text-zed-text border-b border-zed-border pb-2">
-        SKILLS
+        CORE COMPETENCIES
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {Object.entries(resumeData.skills).map(([category, items]) => (
