@@ -4,13 +4,14 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import DownloadIcon from '@mui/icons-material/Download';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import { Box, Button, Divider, Stack, Chip } from '@mui/material';
 import resumeData from '../data/resume.json';
 
 export default function Sidebar() {
   return (
-    <aside className="w-full md:w-96 flex-shrink-0 flex flex-col gap-6 md:border-r border-zed-border p-6 bg-zed-bg">
+    <aside className="w-full md:w-80 flex-shrink-0 flex flex-col gap-6 md:border-r border-zed-border p-6 bg-zed-bg">
       {/* Profile / Name */}
-      <div>
+      <div className="text-center">
         <h1 className="text-2xl font-bold text-zed-text">
           {resumeData.name}
         </h1>
@@ -20,87 +21,106 @@ export default function Sidebar() {
       </div>
 
       {/* Contact Info */}
-      <div className="flex flex-col gap-3 text-sm">
-        <div className="flex items-center gap-2 text-zed-text">
-          <LocationOnIcon fontSize="small" className="text-zed-muted" />
-          <span>Mount Vernon, WA</span>
-        </div>
-
-        <a
+      <Stack spacing={1} alignItems="center">
+        <Chip
+          icon={<LocationOnIcon />}
+          label="Mount Vernon, WA"
+          variant="outlined"
+          size="small"
+        />
+        <Chip
+          icon={<EmailIcon />}
+          label={resumeData.contact.email}
+          component="a"
           href={`mailto:${resumeData.contact.email}`}
-          className="flex items-center gap-2 text-zed-text hover:text-zed-accent transition-colors"
-        >
-          <EmailIcon fontSize="small" className="text-zed-muted" />
-          <span className="truncate">{resumeData.contact.email}</span>
-        </a>
-
-        <a
+          clickable
+          variant="outlined"
+          size="small"
+        />
+        <Chip
+          icon={<PhoneIcon />}
+          label={resumeData.contact.phone}
+          component="a"
           href={`tel:${resumeData.contact.phone}`}
-          className="flex items-center gap-2 text-zed-text hover:text-zed-accent transition-colors"
-        >
-          <PhoneIcon fontSize="small" className="text-zed-muted" />
-          <span>{resumeData.contact.phone}</span>
-        </a>
-      </div>
+          clickable
+          variant="outlined"
+          size="small"
+        />
+      </Stack>
 
       {/* Social Links */}
-      <div className="flex flex-col gap-3 text-sm">
-        <a
+      <Stack direction="row" spacing={1} justifyContent="center" mt={3}>
+        <Chip
+          icon={<GitHubIcon />}
+          label="GitHub"
+          component="a"
           href={resumeData.contact.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 text-zed-text hover:text-zed-accent transition-colors"
-        >
-          <GitHubIcon fontSize="small" className="text-zed-muted" />
-          <span>GitHub</span>
-        </a>
-
-        <a
+          clickable
+          variant="outlined"
+          size="small"
+        />
+        <Chip
+          icon={<LinkedInIcon />}
+          label="LinkedIn"
+          component="a"
           href={resumeData.contact.linkedin}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 text-zed-text hover:text-zed-accent transition-colors"
-        >
-          <LinkedInIcon fontSize="small" className="text-zed-muted" />
-          <span>LinkedIn</span>
-        </a>
-      </div>
+          clickable
+          variant="outlined"
+          size="small"
+        />
+      </Stack>
 
       {/* Unit Patches */}
-      <div className="flex flex-col items-center gap-4 py-4 mt-auto">
-        <img
+      <Stack spacing={2} alignItems="center" py={2} mt={4}>
+        <Box
+          component="img"
           src="/images/82nd.png"
           alt="82nd Airborne Division"
-          className="w-16 h-16 object-contain opacity-80 hover:opacity-100 transition-opacity"
+          sx={{
+            width: 90,
+            height: 90,
+            objectFit: 'contain',
+            opacity: 0.8,
+            transition: 'opacity 0.2s',
+            '&:hover': { opacity: 1 }
+          }}
           title="82nd Airborne Division"
         />
-        <div className="w-12 border-t border-zed-border" />
-        <img
+        <Divider sx={{ width: '60%' }} />
+        <Box
+          component="img"
           src="/images/25th.jpg"
           alt="25th Infantry Division"
-          className="w-16 h-16 object-contain opacity-80 hover:opacity-100 transition-opacity"
+          sx={{
+            width: 90,
+            height: 90,
+            objectFit: 'contain',
+            opacity: 0.8,
+            transition: 'opacity 0.2s',
+            '&:hover': { opacity: 1 }
+          }}
           title="25th Infantry Division"
         />
-        <div className="w-12 border-t border-zed-border" />
-        <img
+        <Divider sx={{ width: '60%' }} />
+        <Box
+          component="img"
           src="/images/11th.jpg"
           alt="11th Airborne Division"
-          className="w-16 h-16 object-contain opacity-80 hover:opacity-100 transition-opacity"
+          sx={{
+            width: 90,
+            height: 90,
+            objectFit: 'contain',
+            opacity: 0.8,
+            transition: 'opacity 0.2s',
+            '&:hover': { opacity: 1 }
+          }}
           title="11th Airborne Division"
         />
-      </div>
-
-      {/* Download Resume */}
-      <div>
-        <a
-          href="/resume.pdf"
-          download
-          className="flex items-center justify-center gap-2 w-full py-2 px-4 border border-zed-border rounded-md text-sm text-zed-text hover:bg-zed-highlight transition-colors"
-        >
-          <DownloadIcon fontSize="small" />
-          <span>Download PDF</span>
-        </a>
-      </div>
+      </Stack>
     </aside>
   );
 }
