@@ -1,10 +1,8 @@
+
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
-  
   return (
-    <footer className="py-6 text-center text-sm text-gray-500 border-t border-gray-200 mt-8">
-      <p>© {currentYear} All rights reserved.</p>
-      <p className="mt-2">Built with React • Tailwind CSS</p>
+    <footer className="py-8 text-center text-sm text-zed-muted">
+      <p>&copy; {new Date().getFullYear()} Andrew Stalker. All rights reserved.</p>
     </footer>
   );
 }
