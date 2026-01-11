@@ -2,7 +2,7 @@
 
 ## Professional Overview
 
-Results-driven Principal Software Engineer with 9+ years of full-stack experience architecting high-scale distributed systems and microservices ecosystems. Proven technical leader specializing in modern stack migrations and cloud-native architectures. Excel at guiding cross-functional teams, mentoring engineers, and leveraging modern AI tools to boost performance. Experienced in high-pressure environments delivering scalable solutions that prioritize clarity, iteration, and operational excellence.
+Strategic Principal Software Engineer and Army veteran with 9+ years building greenfield products and modernizing legacy systems in insurance tech. Currently leading teams at Liberty Mutual to deliver new products on modern stacks, architecting event-driven platforms, and establishing technical standards adopted across partners—achieving zero-downtime releases and 30% faster time-to-market via Agentic AI. Military Signals Intelligence background sharpened pattern recognition, real-time decision-making, and the ability to lead cross-functional teams through high-pressure delivery.
 
 ---
 
@@ -168,4 +168,4 @@ Suitable for:
 
 ---
 
-*Built with React + Material-UI | Vite | TypeScript*
+*Built with React + Tailwind CSS | Vite | TypeScript*

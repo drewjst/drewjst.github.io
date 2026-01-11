@@ -7,7 +7,7 @@
     "github": "https://github.com/drewjst?tab=repositories",
     "linkedin": "https://www.linkedin.com/in/andrew-stalker-7b642778"
   },
-  "summary": "Mission-driven Principal Software Engineer and US Army Veteran with 9+ years of experience leading large-scale digital transformations in high-stakes environments. Expert in modernizing legacy insurance monoliths into cloud-native microservices while maintaining zero-downtime tolerance. Architect of high-velocity development cultures, leveraging Agentic AI to accelerate delivery by 30%. Proven in high-pressure environments—from Army deployments to production launches—delivering scalable solutions that prioritize clarity, iteration, and efficiency.",
+  "summary": "Strategic Principal Software Engineer and Army veteran with 9+ years building greenfield products and modernizing legacy systems in insurance tech. Currently leading teams at Liberty Mutual to deliver new products on modern stacks, architecting event-driven platforms, and establishing technical standards adopted across partners—achieving zero-downtime releases and 30% faster time-to-market via Agentic AI. Military Signals Intelligence background sharpened pattern recognition, real-time decision-making, and the ability to lead cross-functional teams through high-pressure delivery.",
   "experience": [
     {
       "title": "Principal Software Engineer",
@@ -18,10 +18,9 @@
         "Spearheaded technical leadership for the Small Commercial Products Tech team, guiding the development of system, technical, and product standards while leading the end-to-end delivery of flagship products, including the current build of the new Workers Comp product on a modern scalable stack (Angular/TypeScript + Java/Spring).",
         "Shipped multiple products and enhancements, delivering across the small commercial portfolio (BOP, Commercial Package, Simple BOP, Auto), consistently enhancing core functionality with zero major disruptions.",
         "Led the cross-functional adoption of the ISO 2026 Classification System, making critical architectural decisions that enabled portfolio growth without disrupting existing high-volume workflows.",
-        "Spearheaded the architectural design of a cloud-native distributed microservices platform, guiding multiple teams in the adoption of an event-driven enrichment pattern; established asynchronous ‘listeners’ as the technical standard for real-time data ingestion, which improved data integrity and reduced frontend latency.",
-        "Led GitHub migrations and legacy refactoring in regulated insurance, directing secure API designs and compliance enhancements—boosting developer productivity 25% and resilience for commercial products.",
+        "Architected a cloud-native distributed microservices platform handling 250k+ requests/hour at peak, partnering with multiple teams to adopt an event-driven enrichment pattern; established asynchronous 'listeners' as the technical standard for real-time data ingestion, improving data integrity and reducing frontend latency.",
         "Force Multiplication via AI: Led a cross-functional pilot for Agentic AI integration, establishing technical standards that reduced total time-to-market for new features by 30% across the department.",
-        "Implemented Angular + NgRx for predictable data flows and scalable state management, streamlining front-end development and reducing UI bugs by establishing reusable patterns."
+        "Established Angular + NgRx for predictable data flows and scalable state management, streamlining front-end development and reducing UI bugs through reusable patterns."
       ]
     },
     {
@@ -53,7 +52,6 @@
       "endDate": "Dec 2016",
       "highlights": [
         "Built and maintained Risque, an enterprise infrastructure management suite in C#/ASP.NET with SQL Server back-end.",
-        "Created and optimized complex SQL queries, enhancing data retrieval efficiency for infrastructure management.",
         "Optimized complex SQL queries and delivered responsive web interfaces, improving data accessibility and user experience across devices."
       ]
     },
@@ -64,37 +62,38 @@
       "endDate": "Jul 2013",
       "highlights": [
         "Systems Intelligence: Led SIGINT and Reconnaissance teams in high-pressure combat environments, utilizing pattern recognition and real-time data analysis—skills directly applied today to complex system debugging and architectural optimization.",
-        "Leadership under Pressure: As a Jumpmaster and Scout Team Leader, managed mission-critical operations where precision and clarity were paramount, fostering a \"mission-first\" engineering mindset.",
-        "Operation Iraqi Freedom (2006–2008) and Operation Enduring Freedom (2011–2012). [Additional Context](https://en.wikipedia.org/wiki/Iraq_War_troop_surge_of_2007)"
+        "Leadership under Pressure: As a Jumpmaster and Scout Team Leader, managed mission-critical operations where precision and clarity were paramount.",
+        "Operation Iraqi Freedom (2006–2008) and Operation Enduring Freedom (2011–2012)"
       ]
     }
   ],
   "skills": {
     "Engineering Leadership": [
       "Distributed Systems",
-      "Multi-Layered System Design",
-      "Legacy System Modernization",
-      "Cross-Functional Team Leadership & Mentoring"
+      "Event-Driven Architecture",
+      "Legacy Modernization",
+      "Cross-Functional Team Leadership",
+      "Mentoring",
+      "Agentic AI Adoption"
     ],
     "Languages & Frameworks": [
       "Java (Spring Boot)",
       "Kotlin",
       "TypeScript/JavaScript (React, Angular/NgRx)",
+      "Go (Golang)",
       "C# (.NET)"
     ],
-    "Infrastructure & Data": [
+    "Cloud & Infrastructure": [
+      "GCP (Cloud Run, Cloud SQL, Cloud Build)",
       "AWS (EC2, RDS)",
-      "GCP",
       "PostgreSQL",
-      "SQL Server",
+      "SQL Server"
+    ],
+    "DevOps & Observability": [
+      "Docker",
+      "CI/CD (GitHub Actions, Bamboo)",
       "Datadog",
       "Splunk"
-    ],
-    "DevOps & Tools": [
-      "CI/CD (GitHub Actions, Bamboo)",
-      "GitHub Copilot",
-      "Agentic AI",
-      "Agile/Scrum"
     ]
   },
   "education": [
