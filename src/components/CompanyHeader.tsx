@@ -14,7 +14,9 @@ export default function CompanyHeader() {
           href={link.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="px-4 py-2 text-sm border border-zed-border rounded-full text-zed-text hover:bg-zed-highlight hover:border-zed-accent transition-all duration-200"
+          aria-label={`${link.name} (opens in a new tab)`}
+          title="Opens in a new tab"
+          className="px-4 py-2 text-sm border border-zed-border rounded-full text-zed-text hover:bg-zed-highlight hover:border-zed-accent focus:outline-none focus:ring-2 focus:ring-zed-accent focus:ring-offset-2 transition-all duration-200"
         >
           {link.name}
         </a>
