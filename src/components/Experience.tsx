@@ -1,101 +1,68 @@
-import { Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import React from 'react';
+import { useScrollReveal } from '../hooks/useScrollReveal';
 import resumeData from '../data/resume.json';
-import type { WorkExperience } from '../types/resume'
-
-const parseHighlight = (text: string) => {
-  const parts = [];
-  let lastIndex = 0;
-  // Regex to match markdown-style links: [text](url)
-  const regex = /\[([^\]]+)\]\(([^)]+)\)/g;
-  let match;
-
-  while ((match = regex.exec(text)) !== null) {
-    // Push text before the link
-    if (match.index > lastIndex) {
-      parts.push(text.substring(lastIndex, match.index));
-    }
-    // Push the link component
-    parts.push(
-      <a
-        key={match.index}
-        href={match[2]}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-zed-accent underline hover:text-zed-text"
-      >
-        {match[1]}
-      </a>
-    );
-    lastIndex = regex.lastIndex;
-  }
-  // Push remaining text
-  if (lastIndex < text.length) {
-    parts.push(text.substring(lastIndex));
-  }
-  return parts.length > 0 ? parts : text;
-};
 
 export default function Experience() {
+  const ref = useScrollReveal<HTMLElement>();
+
   return (
-    <section>
-      <h2 className="text-xl font-bold mb-6 text-zed-text border-b border-zed-border pb-2">
-        EXPERIENCE
-      </h2>
-      <div className="space-y-4">
-        {resumeData.experience.map((job: WorkExperience, index) => (
-          <Accordion
-            key={`${job.company}-${job.title}`}
-            defaultExpanded={index === 0}
-            disableGutters
-            elevation={0}
-            square
-            sx={{
-              backgroundColor: 'transparent',
-              border: 'none',
-              boxShadow: 'none',
-              '&.MuiAccordion-root': {
-                backgroundColor: 'transparent',
-                backgroundImage: 'none',
-                boxShadow: 'none',
-                '&:before': { display: 'none' },
-                margin: 0,
-              },
-            }}
-          >
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon className="text-zed-muted" />}
-              sx={{
-                padding: '0',
-                minHeight: 'auto',
-                '& .MuiAccordionSummary-content': { margin: '8px 0' },
-                '&:hover': { backgroundColor: 'transparent' }
-              }}
-            >
-              <div className="flex flex-col w-full pr-4">
-                <div className="flex justify-between items-baseline mb-1">
-                  <h3 className="text-lg font-bold text-zed-text">{job.title}</h3>
-                  <span className="text-zed-muted text-sm shrink-0 ml-4">
+    <section id="experience" ref={ref} className="py-24 px-6 bg-dark-surface">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <span className="gradient-text">Experience</span>
+        </h2>
+        <div className="w-20 h-1 bg-accent rounded mb-12" />
+
+        <div className="space-y-8">
+          {resumeData.experience.map((job, index) => (
+            <div key={`${job.company}-${job.title}`} className="relative pl-8 md:pl-12 group">
+              {/* Timeline dot */}
+              <div className="absolute left-0 top-2 flex flex-col items-center">
+                <div
+                  className={`w-4 h-4 rounded-full border-2 z-10 transition-colors duration-300 ${
+                    index === 0
+                      ? 'bg-accent border-accent'
+                      : 'bg-dark-bg border-dark-border group-hover:border-accent'
+                  }`}
+                />
+                {/* Timeline connector line */}
+                {index < resumeData.experience.length - 1 && (
+                  <div className="w-0.5 bg-dark-border absolute top-4 left-[7px] h-[calc(100%+32px)]" />
+                )}
+              </div>
+
+              {/* Content card */}
+              <div className="p-6 rounded-xl bg-dark-card border border-dark-border hover:border-accent/20 transition-all duration-300">
+                <div className="flex flex-col md:flex-row md:items-baseline md:justify-between mb-3 gap-1">
+                  <div>
+                    <h3 className="text-xl font-bold text-dark-text">{job.title}</h3>
+                    <p className="text-accent font-medium">{job.company}</p>
+                  </div>
+                  <span className="text-sm text-dark-muted font-mono shrink-0">
                     {job.startDate} — {job.endDate}
                   </span>
                 </div>
-                <p className="text-zed-accent text-sm font-medium">
-                  {job.company}
-                </p>
+
+                {/* Military unit patches */}
+                {job.company.includes('Army') && (
+                  <div className="flex gap-4 my-4">
+                    <img src="/images/82nd.png" alt="82nd Airborne Division" className="w-14 h-14 object-contain opacity-70 hover:opacity-100 transition-opacity" title="82nd Airborne Division" />
+                    <img src="/images/25th.jpg" alt="25th Infantry Division" className="w-14 h-14 object-contain opacity-70 hover:opacity-100 transition-opacity" title="25th Infantry Division" />
+                    <img src="/images/11th.jpg" alt="11th Airborne Division" className="w-14 h-14 object-contain opacity-70 hover:opacity-100 transition-opacity" title="11th Airborne Division" />
+                  </div>
+                )}
+
+                <ul className="space-y-2 mt-4">
+                  {job.highlights.map((highlight, i) => (
+                    <li key={i} className="flex gap-3 text-dark-secondary text-sm leading-relaxed">
+                      <span className="text-accent mt-0.5 shrink-0">&#9657;</span>
+                      <span>{highlight}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-            </AccordionSummary>
-            <AccordionDetails sx={{ padding: '0 0 16px 0' }}>
-              <ul className="list-none space-y-2 pl-2 border-l border-zed-border ml-1">
-                {job.highlights.map((highlight, index) => (
-                  <li key={index} className="text-zed-text text-sm leading-relaxed relative pl-4 before:content-['-'] before:absolute before:left-0 before:text-zed-muted">
-                    {parseHighlight(highlight)}
-                  </li>
-                ))}
-              </ul>
-            </AccordionDetails>
-          </Accordion>
-        ))}
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

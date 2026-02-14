@@ -3,11 +3,11 @@
   "title": "Principal Software Engineer",
   "contact": {
     "email": "drew.jst@gmail.com",
-    "phone": "xxx.xxx.2841",
-    "github": "https://github.com/drewjst?tab=repositories",
+    "phone": "765.237.2841",
+    "github": "https://github.com/drewjst",
     "linkedin": "https://www.linkedin.com/in/andrew-stalker-7b642778"
   },
-  "summary": "Strategic Principal Software Engineer and Army veteran with 9+ years building greenfield products and modernizing legacy systems in insurance tech. Currently leading teams at Liberty Mutual to deliver new products on modern stacks, architecting event-driven platforms, and establishing technical standards adopted across partners—achieving zero-downtime releases and 30% faster time-to-market via Agentic AI. Military Signals Intelligence background sharpened pattern recognition, real-time decision-making, and the ability to lead cross-functional teams through high-pressure delivery.",
+  "summary": "Principal Fullstack Software Engineer and Army veteran with 10+ years building greenfield products from scratch and scaling them into primary business drivers. Leading a globally distributed 12-engineer team at Liberty Mutual—designing event-driven platforms processing 250K+ req/hour, establishing technical standards adopted across the organization, and achieving zero-downtime releases and 30% faster time-to-market via Agentic AI. Military SIGINT background sharpened the pattern recognition and pressure tolerance behind it all.",
   "experience": [
     {
       "title": "Principal Software Engineer",
@@ -15,12 +15,12 @@
       "startDate": "Aug 2023",
       "endDate": "Present",
       "highlights": [
-        "Spearheaded technical leadership for the Small Commercial Products Tech team, guiding the development of system, technical, and product standards while leading the end-to-end delivery of flagship products, including the current build of the new Workers Comp product on a modern scalable stack (Angular/TypeScript + Java/Spring).",
-        "Shipped multiple products and enhancements, delivering across the small commercial portfolio (BOP, Commercial Package, Simple BOP, Auto), consistently enhancing core functionality with zero major disruptions.",
-        "Led the cross-functional adoption of the ISO 2026 Classification System, making critical architectural decisions that enabled portfolio growth without disrupting existing high-volume workflows.",
-        "Architected a cloud-native distributed microservices platform handling 250k+ requests/hour at peak, partnering with multiple teams to adopt an event-driven enrichment pattern; established asynchronous 'listeners' as the technical standard for real-time data ingestion, improving data integrity and reducing frontend latency.",
-        "Force Multiplication via AI: Led a cross-functional pilot for Agentic AI integration, establishing technical standards that reduced total time-to-market for new features by 30% across the department.",
-        "Established Angular + NgRx for predictable data flows and scalable state management, streamlining front-end development and reducing UI bugs through reusable patterns."
+        "Leading a globally distributed team of 12+ engineers (US and India-based) as technical leader for the Small Commercial product portfolio, owning technical roadmaps and stakeholder alignment while guiding end-to-end delivery of flagship products on a modern stack (Angular/TypeScript + Java/Spring Boot).",
+        "Designed and built a cloud-native, event-driven microservices platform handling 250K+ requests/hour at peak; implemented asynchronous listeners for real-time data ingestion from partner APIs, establishing the integration pattern adopted across the organization.",
+        "Led a cross-functional Agentic AI pilot, establishing technical standards that reduced time-to-market by 30% and driving adoption across the engineering department.",
+        "Shipped multiple products and enhancements across the portfolio (BOP, Commercial Package, Simple BOP, Workers Comp), driving growth while maintaining zero major production disruptions.",
+        "Led the cross-functional adoption of the ISO 2026 Classification System, reworking entrenched data models and schemas to support new business lines without disrupting high-volume production workflows.",
+        "Foster a culture of quality and continuous learning through code reviews, design discussions, and technical workshops; mentor engineers at all levels with regular feedback and career guidance."
       ]
     },
     {
@@ -29,20 +29,21 @@
       "startDate": "Apr 2020",
       "endDate": "Aug 2023",
       "highlights": [
-        "Built robust, scalable full-stack web applications using Angular for front-end and Java/Spring Boot for back-end, supporting agile sprints that delivered high-quality solutions on time for insurance product enhancements.",
-        "Performance Engineering: Engineered multithreaded and asynchronous Java algorithms that significantly improved search responsiveness and UX for high-transaction insurance workflows.",
-        "Committed to professional growth by tracking industry trends, attending conferences, and sharing knowledge via internal workshops, mentoring juniors to boost team-wide adoption of best practices."
+        "Built robust fullstack applications and third-party integrations in Angular and Java/Spring Boot, designing RESTful and event-driven APIs that connected internal systems with external data providers and partner platforms.",
+        "Engineered multithreaded and asynchronous Java algorithms for transaction processing and calculation engines, significantly improving throughput and responsiveness for high-volume workflows.",
+        "Drove operational improvements including enhanced Datadog monitoring, automated testing pipelines, and deployment automation that improved system reliability and developer velocity.",
+        "Mentored junior engineers and led internal workshops on best practices, boosting team-wide adoption of coding standards and test coverage."
       ]
     },
     {
       "title": "Software Engineer",
       "company": "Liberty Mutual Insurance",
-      "startDate": "Dec 2017",
-      "endDate": "April 2020",
+      "startDate": "Jan 2017",
+      "endDate": "Apr 2020",
       "highlights": [
-        "Pioneered early innovations in simplifying small commercial insurance workflows, conceiving and developing core features that launched Simple BOP—rapidly becoming the primary growth driver for the small commercial portfolio.",
-        "Developed and optimized full-stack features for enterprise insurance systems, enhancing performance and scalability to support growing transaction volumes.",
-        "Collaborated on agile refactoring of legacy codebases, improving reliability and long-term maintainability."
+        "Built Simple BOP from scratch—developed core features for a greenfield product that scaled from concept to the primary growth driver for the small commercial portfolio.",
+        "Contributed to migrating legacy systems to modern event-driven microservices, defining technical plans and prototyping solutions that improved extensibility and long-term maintainability.",
+        "Designed and built third-party API integrations with caching strategies."
       ]
     },
     {
@@ -51,58 +52,73 @@
       "startDate": "Mar 2015",
       "endDate": "Dec 2016",
       "highlights": [
-        "Built and maintained Risque, an enterprise infrastructure management suite in C#/ASP.NET with SQL Server back-end.",
-        "Optimized complex SQL queries and delivered responsive web interfaces, improving data accessibility and user experience across devices."
+        "Built and maintained Risque, an enterprise infrastructure management suite in C#/ASP.NET with SQL Server; optimized complex SQL queries and delivered responsive web interfaces."
       ]
     },
     {
-      "title": "Signals Intelligence Analyst & Cavalry Scout / Scout Team Leader",
-      "company": "US Army - Airborne / Jumpmaster",
+      "title": "Military Service",
+      "company": "US Army — Airborne / Jumpmaster",
       "startDate": "Feb 2006",
       "endDate": "Jul 2013",
+      "subtitle": "Signals Intelligence Analyst & Cavalry Scout",
       "highlights": [
-        "Systems Intelligence: Led SIGINT and Reconnaissance teams in high-pressure combat environments, utilizing pattern recognition and real-time data analysis—skills directly applied today to complex system debugging and architectural optimization.",
-        "Leadership under Pressure: As a Jumpmaster and Scout Team Leader, managed mission-critical operations where precision and clarity were paramount.",
-        "Operation Iraqi Freedom (2006–2008) and Operation Enduring Freedom (2011–2012)"
+        "Led SIGINT and Reconnaissance teams in high-pressure combat environments, utilizing pattern recognition and real-time data analysis—skills directly applied today to complex system debugging and architectural optimization.",
+        "Graduated Basic Leader Course (BLC) as Honor Graduate—a distinction awarded to top-performing NCO candidates based on leadership evaluation, academic performance, and physical fitness.",
+        "As a Jumpmaster and Scout Team Leader, managed mission-critical operations where precision and clarity were paramount.",
+        "Operation Iraqi Freedom (2006–2008) & Operation Enduring Freedom (2011–2012)"
       ]
     }
   ],
   "skills": {
-    "Engineering Leadership": [
-      "Distributed Systems",
-      "Event-Driven Architecture",
-      "Legacy Modernization",
-      "Cross-Functional Team Leadership",
-      "Mentoring",
-      "Agentic AI Adoption"
-    ],
     "Languages & Frameworks": [
       "Java (Spring Boot)",
       "Kotlin",
-      "TypeScript/JavaScript (React, Angular/NgRx)",
-      "Go (Golang)",
+      "TypeScript / JavaScript",
+      "React",
+      "Angular / NgRx",
+      "Go",
+      "Python",
       "C# (.NET)"
     ],
     "Cloud & Infrastructure": [
       "GCP (Cloud Run, Cloud SQL, Cloud Build)",
-      "AWS (EC2, RDS)",
-      "PostgreSQL",
-      "SQL Server"
-    ],
-    "DevOps & Observability": [
+      "AWS (EC2, RDS, SQS)",
       "Docker",
-      "CI/CD (GitHub Actions, Bamboo)",
+      "CI/CD (GitHub Actions, Bamboo)"
+    ],
+    "Data & APIs": [
+      "Event-Driven Architecture",
+      "RESTful API Design",
+      "GraphQL",
+      "PostgreSQL",
+      "MySQL",
+      "Kafka",
+      "Third-Party Integrations"
+    ],
+    "Observability & Operations": [
       "Datadog",
-      "Splunk"
+      "Splunk",
+      "Alerting & Triage",
+      "Incident Runbooks",
+      "On-Call Management"
+    ],
+    "Leadership": [
+      "Distributed Team Leadership",
+      "Technical Strategy",
+      "Legacy Modernization",
+      "Cross-Functional Collaboration",
+      "Mentoring",
+      "Greenfield Product Development",
+      "Agentic AI Adoption"
     ]
   },
   "education": [
     {
       "school": "Purdue University",
       "degree": "Bachelor of Science",
-      "field": "Computer & Information Technology",
-      "graduationDate": "2013-2016",
-      "details": "Emphasis on Software Engineering. Minor in Communication. Dean's List & Semester Honors"
+      "field": "Computer & Information Technology, Software Engineering Emphasis",
+      "graduationDate": "2013–2016",
+      "details": "Minor in Communication | Dean's List & Semester Honors"
     }
   ]
 }

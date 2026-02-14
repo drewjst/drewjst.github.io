@@ -7,20 +7,41 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
         mono: ['"Fira Code"', 'monospace'],
-        sans: ['"Fira Code"', 'monospace'], // Override sans to enforce mono everywhere per user request
       },
       colors: {
-        zed: {
-          bg: '#fbfbfb',
-          surface: '#ffffff',
-          border: '#e5e5e5',
-          text: '#333333',
-          muted: '#888888',
-          accent: '#4c4c4c', // Dark grey for accent
-          highlight: '#e8e8e8' // Hover state
+        dark: {
+          bg: '#09090b',
+          surface: '#111114',
+          card: '#1a1a20',
+          border: '#2a2a32',
+          text: '#fafafa',
+          secondary: '#a1a1aa',
+          muted: '#71717a',
+        },
+        accent: {
+          DEFAULT: '#06d6a0',
+          hover: '#34e0b4',
+          muted: 'rgba(6, 214, 160, 0.1)',
+          glow: 'rgba(6, 214, 160, 0.15)',
         }
-      }
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.8s ease-out both',
+        'slide-up': 'slideUp 0.8s ease-out both',
+        'bounce-slow': 'bounce 2.5s infinite',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideUp: {
+          '0%': { opacity: '0', transform: 'translateY(24px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
     },
   },
   plugins: [],
