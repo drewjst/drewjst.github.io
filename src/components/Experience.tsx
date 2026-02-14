@@ -42,15 +42,6 @@ export default function Experience() {
                   </span>
                 </div>
 
-                {/* Military unit patches */}
-                {job.company.includes('Army') && (
-                  <div className="flex gap-4 my-4">
-                    <img src="/images/82nd.png" alt="82nd Airborne Division" className="w-14 h-14 object-contain opacity-70 hover:opacity-100 transition-opacity" title="82nd Airborne Division" />
-                    <img src="/images/25th.jpg" alt="25th Infantry Division" className="w-14 h-14 object-contain opacity-70 hover:opacity-100 transition-opacity" title="25th Infantry Division" />
-                    <img src="/images/11th.jpg" alt="11th Airborne Division" className="w-14 h-14 object-contain opacity-70 hover:opacity-100 transition-opacity" title="11th Airborne Division" />
-                  </div>
-                )}
-
                 <ul className="space-y-2 mt-4">
                   {job.highlights.map((highlight, i) => (
                     <li key={i} className="flex gap-3 text-dark-secondary text-sm leading-relaxed">
