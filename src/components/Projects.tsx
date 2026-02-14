@@ -11,6 +11,14 @@ const projects = [
     status: 'live' as const,
   },
   {
+    name: 'Gamma Shift',
+    role: 'Founder & Developer',
+    description:
+      'An options analytics engine focused on gamma exposure and dealer positioning. Provides real-time insight into options market dynamics to inform trading decisions.',
+    technologies: [],
+    status: 'in-progress' as const,
+  },
+  {
     name: 'DeltaGov',
     role: 'Founder & Developer',
     description:

@@ -2,9 +2,7 @@ import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const stats = [
   { value: '10+', label: 'Years Experience' },
-  { value: '12', label: 'Engineers Led' },
-  { value: '250K+', label: 'Requests / Hour' },
-  { value: '30%', label: 'Faster TTM via AI' },
+  { value: 'Faster TTM', label: 'Agentic AI' },
 ];
 
 export default function About() {
