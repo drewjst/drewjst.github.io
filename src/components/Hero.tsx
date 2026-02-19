@@ -8,7 +8,7 @@ export default function Hero() {
         <p className="text-accent font-mono text-sm md:text-base mb-4 animate-fade-in">
           Hello, I'm
         </p>
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight animate-slide-up">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight animate-slide-up text-dark-text">
           Andrew Stalker
         </h1>
         <p
@@ -21,7 +21,7 @@ export default function Hero() {
           className="text-dark-muted max-w-2xl mx-auto text-base md:text-lg leading-relaxed animate-slide-up"
           style={{ animationDelay: '0.2s' }}
         >
-          Building greenfield products from scratch and scaling them into primary business drivers.
+          Driving technical direction for distributed, event-driven financial platforms.
           10+ years of engineering. Army veteran. Engineering leader.
         </p>
 
@@ -30,8 +30,8 @@ export default function Hero() {
           style={{ animationDelay: '0.3s' }}
         >
           <a
-            href="#experience"
-            className="px-6 py-3 bg-accent text-dark-bg font-semibold rounded-lg hover:bg-accent-hover transition-colors duration-200"
+            href="#resume"
+            className="px-6 py-3 bg-accent text-white font-semibold rounded-lg hover:bg-accent-hover transition-colors duration-200"
           >
             View My Work
           </a>

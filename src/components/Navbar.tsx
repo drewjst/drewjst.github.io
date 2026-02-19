@@ -2,8 +2,7 @@ import { useState, useEffect } from 'react';
 
 const navLinks = [
   { label: 'About', href: '#about' },
-  { label: 'Experience', href: '#experience' },
-  { label: 'Skills', href: '#skills' },
+  { label: 'Resume', href: '#resume' },
   { label: 'Projects', href: '#projects' },
   { label: 'Contact', href: '#contact' },
 ];
@@ -22,7 +21,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-dark-bg/80 backdrop-blur-lg border-b border-dark-border shadow-lg'
+          ? 'bg-dark-bg/80 backdrop-blur-lg border-b border-dark-border shadow-sm'
           : 'bg-transparent'
       }`}
     >

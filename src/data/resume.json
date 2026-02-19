@@ -7,20 +7,22 @@
     "github": "https://github.com/drewjst",
     "linkedin": "https://www.linkedin.com/in/andrew-stalker-7b642778"
   },
-  "summary": "Principal Fullstack Software Engineer and Army veteran with 10+ years building greenfield products from scratch and scaling them into primary business drivers. Leading a globally distributed 12-engineer team at Liberty Mutual—designing event-driven platforms processing 250K+ req/hour, establishing technical standards adopted across the organization, and achieving zero-downtime releases and 30% faster time-to-market via Agentic AI. Military SIGINT background sharpened the pattern recognition and pressure tolerance behind it all.",
+  "summary": "Principal Software Engineer driving technical direction and cross-domain execution for distributed, event-driven financial platforms supporting Liberty Mutual's $7.1B Small Commercial portfolio. Partner with solution architects and product leadership to translate architectural strategy into high-impact, reliable delivery across five product areas, aligning 12+ engineers around service boundaries, modernization sequencing, and production resilience in a regulated environment. Hands-on distributed systems expertise (Java/Spring Boot, Go, event-driven microservices, AWS/GCP) combined with cross-team technical leadership, modernization strategy, and AI-assisted development adoption.",
   "experience": [
     {
       "title": "Principal Software Engineer",
       "company": "Liberty Mutual Insurance",
       "startDate": "Aug 2023",
       "endDate": "Present",
+      "subtitle": "Technical lead partnering with solution architects and product leadership to drive cross-domain modernization initiatives across multiple Small Commercial product areas.",
       "highlights": [
-        "Leading a globally distributed team of 12+ engineers (US and India-based) as technical leader for the Small Commercial product portfolio, owning technical roadmaps and stakeholder alignment while guiding end-to-end delivery of flagship products on a modern stack (Angular/TypeScript + Java/Spring Boot).",
-        "Designed and built a cloud-native, event-driven microservices platform handling 250K+ requests/hour at peak; implemented asynchronous listeners for real-time data ingestion from partner APIs, establishing the integration pattern adopted across the organization.",
-        "Led a cross-functional Agentic AI pilot, establishing technical standards that reduced time-to-market by 30% and driving adoption across the engineering department.",
-        "Shipped multiple products and enhancements across the portfolio (BOP, Commercial Package, Simple BOP, Workers Comp), driving growth while maintaining zero major production disruptions.",
-        "Led the cross-functional adoption of the ISO 2026 Classification System, reworking entrenched data models and schemas to support new business lines without disrupting high-volume production workflows.",
-        "Foster a culture of quality and continuous learning through code reviews, design discussions, and technical workshops; mentor engineers at all levels with regular feedback and career guidance."
+        "Drove cross-domain technical execution for Liberty Mutual's $7.1B Small Commercial portfolio, aligning 12+ engineers across US and India around service boundaries, modernization sequencing, and reliability strategy across five product domains.",
+        "Partnered with architects to formalize and institutionalize event-driven integration standards across product teams, reducing cross-domain coupling and enabling independent deployability.",
+        "Introduced and operationalized AI-assisted development workflows across the engineering organization, establishing governance guardrails and measurable adoption standards that improved time-to-market by 30% while maintaining audit compliance.",
+        "Delivered BOP 3.0 and multiple portfolio products (Workers Comp, Commercial Package, Simple BOP) with zero major production disruptions; selected to lead high-ambiguity initiatives including Workers Comp 2.0 and ISO 2026 adoption, organizing PI workshops and driving cross-discipline alignment.",
+        "Partnered with solution architects and domain stakeholders to drive enterprise adoption of the ISO 2026 Classification System, refactoring core data models and coordinating schema evolution across dependent services while preserving production stability.",
+        "Authored and socialized Architecture Decision Records (ADRs) in collaboration with architects and senior engineers to formalize cross-layer design decisions and reduce rework across UI, BFF, and API systems.",
+        "Mentored engineers across experience levels through code reviews, design discussions, and technical workshops, strengthening engineering standards and promoting a culture of continuous improvement."
       ]
     },
     {
@@ -29,10 +31,10 @@
       "startDate": "Apr 2020",
       "endDate": "Aug 2023",
       "highlights": [
-        "Built robust fullstack applications and third-party integrations in Angular and Java/Spring Boot, designing RESTful and event-driven APIs that connected internal systems with external data providers and partner platforms.",
-        "Engineered multithreaded and asynchronous Java algorithms for transaction processing and calculation engines, significantly improving throughput and responsiveness for high-volume workflows.",
-        "Drove operational improvements including enhanced Datadog monitoring, automated testing pipelines, and deployment automation that improved system reliability and developer velocity.",
-        "Mentored junior engineers and led internal workshops on best practices, boosting team-wide adoption of coding standards and test coverage."
+        "Led monolith-to-microservices decomposition strategy, establishing API contract standards and enabling independent deployability across product domains.",
+        "Built and launched Farm MVP, introducing Farm AG classifications and hazard grading across all states and enabling a new business line.",
+        "Designed event-driven APIs and third-party integrations (Experian, NCCI, regulatory systems) with caching and resilience patterns to reduce latency and external dependency risk.",
+        "Improved throughput via multithreaded and asynchronous processing; strengthened monitoring and deployment pipelines to increase reliability and reduce MTTR."
       ]
     },
     {
@@ -41,9 +43,8 @@
       "startDate": "Jan 2017",
       "endDate": "Apr 2020",
       "highlights": [
-        "Built Simple BOP from scratch—developed core features for a greenfield product that scaled from concept to the primary growth driver for the small commercial portfolio.",
-        "Contributed to migrating legacy systems to modern event-driven microservices, defining technical plans and prototyping solutions that improved extensibility and long-term maintainability.",
-        "Designed and built third-party API integrations with caching strategies."
+        "Built Simple BOP as a greenfield platform, defining initial service architecture and core domain logic; scaled into a primary growth driver within the portfolio.",
+        "Implemented resilient third-party integrations and contributed to event-driven migration of legacy components."
       ]
     },
     {
@@ -52,60 +53,56 @@
       "startDate": "Mar 2015",
       "endDate": "Dec 2016",
       "highlights": [
-        "Built and maintained Risque, an enterprise infrastructure management suite in C#/ASP.NET with SQL Server; optimized complex SQL queries and delivered responsive web interfaces."
+        "Built and maintained enterprise infrastructure management systems using C#/ASP.NET and SQL Server; optimized complex queries and delivered responsive web interfaces."
       ]
     }
   ],
   "skills": {
-    "Languages & Frameworks": [
+    "Architecture": [
+      "Distributed Systems",
+      "Event-Driven Architecture",
+      "Microservices",
+      "API-First Design",
+      "Domain Boundaries",
+      "CQRS",
+      "Async Processing",
+      "Kafka"
+    ],
+    "Languages": [
       "Java (Spring Boot)",
-      "Kotlin",
-      "TypeScript / JavaScript",
-      "React",
-      "Angular / NgRx",
       "Go",
+      "TypeScript (Angular/NgRx, React)",
+      "Kotlin",
       "Python",
-      "C# (.NET)"
+      "C#"
     ],
     "Cloud & Infrastructure": [
-      "GCP (Cloud Run, Cloud SQL, Cloud Build)",
-      "AWS (EC2, RDS, SQS)",
-      "Docker",
-      "CI/CD (GitHub Actions, Bamboo)"
-    ],
-    "Data & APIs": [
-      "Event-Driven Architecture",
-      "RESTful API Design",
-      "GraphQL",
+      "AWS (EC2, RDS, MSK)",
+      "GCP (Cloud Run, Cloud SQL)",
       "PostgreSQL",
       "MySQL",
-      "Kafka",
-      "Third-Party Integrations"
+      "DynamoDB",
+      "Docker",
+      "CI/CD"
     ],
-    "Observability & Operations": [
-      "Datadog",
-      "Splunk",
-      "Alerting & Triage",
-      "Incident Runbooks",
-      "On-Call Management"
+    "Reliability & Operations": [
+      "Production Reliability",
+      "Monitoring (Datadog, Splunk)",
+      "Incident Triage"
     ],
     "Leadership": [
-      "Distributed Team Leadership",
-      "Technical Strategy",
-      "Legacy Modernization",
-      "Cross-Functional Collaboration",
-      "Mentoring",
-      "Greenfield Product Development",
-      "Agentic AI Adoption"
+      "Cross-Team Technical Direction",
+      "Architectural Decision Ownership",
+      "Mentorship"
     ]
   },
   "education": [
     {
       "school": "Purdue University",
       "degree": "Bachelor of Science",
-      "field": "Computer & Information Technology, Software Engineering Emphasis",
+      "field": "Computer & Information Technology",
       "graduationDate": "2013–2016",
-      "details": "Minor in Communication | Dean's List & Semester Honors"
+      "details": "Software Engineering Emphasis | Minor in Communication"
     }
   ]
 }

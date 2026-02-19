@@ -12,19 +12,19 @@ export default {
       },
       colors: {
         dark: {
-          bg: '#09090b',
-          surface: '#111114',
-          card: '#1a1a20',
-          border: '#2a2a32',
-          text: '#fafafa',
-          secondary: '#a1a1aa',
-          muted: '#71717a',
+          bg: '#ffffff',
+          surface: '#f8f9fa',
+          card: '#ffffff',
+          border: '#e5e7eb',
+          text: '#111827',
+          secondary: '#374151',
+          muted: '#6b7280',
         },
         accent: {
           DEFAULT: '#06d6a0',
-          hover: '#34e0b4',
-          muted: 'rgba(6, 214, 160, 0.1)',
-          glow: 'rgba(6, 214, 160, 0.15)',
+          hover: '#05c090',
+          muted: 'rgba(6, 214, 160, 0.08)',
+          glow: 'rgba(6, 214, 160, 0.12)',
         }
       },
       animation: {
