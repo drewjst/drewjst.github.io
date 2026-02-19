@@ -1,54 +1,68 @@
+const stats = [
+  { value: '10+', label: 'Years Experience' },
+  { value: '$7.1B', label: 'Portfolio Scale' },
+  { value: '12+', label: 'Engineers Led' },
+  { value: '30%', label: 'Faster TTM via AI' },
+];
+
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center relative hero-grid">
-      {/* Gradient orb background effect */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent/5 rounded-full blur-[128px] pointer-events-none" />
+    <section id="about" className="pt-28 pb-14 px-6">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-[1fr_auto] gap-10 items-start">
+          {/* Left: Name, title, summary */}
+          <div>
+            <p className="text-accent font-mono text-sm mb-2">Hello, I'm</p>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-dark-text mb-2">
+              Andrew Stalker
+            </h1>
+            <p className="text-lg md:text-xl text-dark-secondary mb-6">
+              Principal Software Engineer
+            </p>
 
-      <div className="relative text-center px-6 max-w-4xl mx-auto">
-        <p className="text-accent font-mono text-sm md:text-base mb-4 animate-fade-in">
-          Hello, I'm
-        </p>
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight animate-slide-up text-dark-text">
-          Andrew Stalker
-        </h1>
-        <p
-          className="text-xl md:text-2xl text-dark-secondary mb-6 animate-slide-up"
-          style={{ animationDelay: '0.1s' }}
-        >
-          Principal Software Engineer
-        </p>
-        <p
-          className="text-dark-muted max-w-2xl mx-auto text-base md:text-lg leading-relaxed animate-slide-up"
-          style={{ animationDelay: '0.2s' }}
-        >
-          Driving technical direction for distributed, event-driven financial platforms.
-          10+ years of engineering. Army veteran. Engineering leader.
-        </p>
+            <div className="space-y-3 mb-8 max-w-2xl">
+              <p className="text-dark-secondary leading-relaxed">
+                Principal Software Engineer and{' '}
+                <span className="text-accent font-medium">Army veteran</span> driving
+                technical direction and cross-domain execution for distributed, event-driven
+                financial platforms supporting Liberty Mutual's $7.1B Small Commercial portfolio.
+              </p>
+              <p className="text-dark-secondary leading-relaxed text-sm">
+                Hands-on distributed systems expertise (Java/Spring Boot, Go, event-driven microservices,
+                AWS/GCP) combined with cross-team technical leadership, modernization strategy, and
+                AI-assisted development adoption.
+              </p>
+            </div>
 
-        <div
-          className="flex flex-col sm:flex-row gap-4 justify-center mt-10 animate-slide-up"
-          style={{ animationDelay: '0.3s' }}
-        >
-          <a
-            href="#resume"
-            className="px-6 py-3 bg-accent text-white font-semibold rounded-lg hover:bg-accent-hover transition-colors duration-200"
-          >
-            View My Work
-          </a>
-          <a
-            href="#contact"
-            className="px-6 py-3 border border-dark-border text-dark-secondary rounded-lg hover:border-accent hover:text-accent transition-colors duration-200"
-          >
-            Get in Touch
-          </a>
+            <div className="flex flex-row gap-3">
+              <a
+                href="#resume"
+                className="px-5 py-2.5 bg-accent text-white font-semibold rounded-lg hover:bg-accent-hover transition-colors duration-200 text-sm"
+              >
+                View Resume
+              </a>
+              <a
+                href="#contact"
+                className="px-5 py-2.5 border border-dark-border text-dark-secondary rounded-lg hover:border-accent hover:text-accent transition-colors duration-200 text-sm"
+              >
+                Get in Touch
+              </a>
+            </div>
+          </div>
+
+          {/* Right: Stats grid */}
+          <div className="grid grid-cols-2 gap-3 w-full md:w-56">
+            {stats.map((stat) => (
+              <div
+                key={stat.label}
+                className="p-4 rounded-xl bg-dark-card border border-dark-border hover:border-accent/30 transition-colors duration-300"
+              >
+                <p className="text-xl font-bold gradient-text mb-0.5">{stat.value}</p>
+                <p className="text-[10px] text-dark-muted">{stat.label}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce-slow">
-        <svg className="w-5 h-5 text-dark-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-        </svg>
       </div>
     </section>
   );
