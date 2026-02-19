@@ -18,7 +18,7 @@ const projects = [
   },
   {
     name: 'Tessera',
-    tech: 'React · TypeScript · Node.js',
+    tech: 'Gov data ingestion & normalization API',
     status: 'in-progress' as const,
   },
   {
