@@ -5,18 +5,20 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   background-color: #ffffff;
-  color: #111827;
+  color: #0a2540;
 }
 
 /* Scroll reveal animation */
 .reveal {
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .reveal.revealed {
@@ -24,18 +26,19 @@ body {
   transform: translateY(0);
 }
 
-/* Hero dot grid pattern */
-.hero-grid {
-  background-image: radial-gradient(circle, rgba(209, 213, 219, 0.5) 1px, transparent 1px);
-  background-size: 32px 32px;
-}
-
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, #059669, #0891b2);
+  background: linear-gradient(135deg, #0a2540, #425466);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* Subtle hero background wash */
+.hero-wash {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(6, 214, 160, 0.05), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 0%, rgba(8, 145, 178, 0.03), transparent);
 }
 
 /* Custom scrollbar */
@@ -44,7 +47,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f8f9fa;
+  background: #f6f9fc;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -58,6 +61,6 @@ body {
 
 /* Selection color */
 ::selection {
-  background-color: rgba(6, 214, 160, 0.2);
-  color: #111827;
+  background-color: rgba(6, 214, 160, 0.15);
+  color: #0a2540;
 }

@@ -7,39 +7,38 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        mono: ['"Fira Code"', 'monospace'],
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        mono: ['"Fira Code"', 'ui-monospace', 'monospace'],
       },
       colors: {
         dark: {
           bg: '#ffffff',
-          surface: '#f8f9fa',
+          surface: '#f6f9fc',
           card: '#ffffff',
-          border: '#e5e7eb',
-          text: '#111827',
-          secondary: '#374151',
-          muted: '#6b7280',
+          border: '#e3e8ee',
+          text: '#0a2540',
+          secondary: '#425466',
+          muted: '#6b7c93',
         },
         accent: {
           DEFAULT: '#06d6a0',
-          hover: '#05c090',
-          muted: 'rgba(6, 214, 160, 0.08)',
-          glow: 'rgba(6, 214, 160, 0.12)',
+          hover: '#05b890',
+          muted: 'rgba(6, 214, 160, 0.06)',
+          glow: 'rgba(6, 214, 160, 0.08)',
         }
       },
+      boxShadow: {
+        'stripe': '0px 1px 1px rgba(0, 0, 0, 0.03), 0px 3px 6px rgba(0, 0, 0, 0.02)',
+        'stripe-md': '0 2px 4px rgba(0, 0, 0, 0.04), 0 6px 18px rgba(0, 0, 0, 0.04)',
+        'stripe-lg': '0 4px 8px rgba(0, 0, 0, 0.04), 0 12px 32px rgba(0, 0, 0, 0.06)',
+      },
       animation: {
-        'fade-in': 'fadeIn 0.8s ease-out both',
-        'slide-up': 'slideUp 0.8s ease-out both',
-        'bounce-slow': 'bounce 2.5s infinite',
+        'fade-in': 'fadeIn 0.6s ease-out both',
       },
       keyframes: {
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
-        },
-        slideUp: {
-          '0%': { opacity: '0', transform: 'translateY(24px)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' },
         },
       },
     },

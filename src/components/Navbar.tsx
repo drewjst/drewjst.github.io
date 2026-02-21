@@ -20,12 +20,12 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-dark-bg/80 backdrop-blur-lg border-b border-dark-border shadow-sm'
+          ? 'bg-white/90 backdrop-blur-md shadow-stripe'
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#" className="text-xl font-bold font-mono text-accent hover:text-accent-hover transition-colors">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="#" className="text-lg font-bold font-mono text-dark-text hover:text-accent transition-colors">
           AS
         </a>
 
@@ -35,7 +35,7 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-dark-secondary hover:text-accent transition-colors duration-200"
+              className="text-sm font-medium text-dark-muted hover:text-dark-text transition-colors duration-200"
             >
               {link.label}
             </a>
@@ -44,11 +44,11 @@ export default function Navbar() {
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden text-dark-secondary hover:text-accent transition-colors"
+          className="md:hidden text-dark-muted hover:text-dark-text transition-colors"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {mobileOpen ? (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             ) : (
@@ -64,12 +64,12 @@ export default function Navbar() {
           mobileOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="bg-dark-surface/95 backdrop-blur-lg border-b border-dark-border px-6 py-4 flex flex-col gap-4">
+        <div className="bg-white/95 backdrop-blur-md shadow-stripe px-6 py-4 flex flex-col gap-4">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-dark-secondary hover:text-accent transition-colors"
+              className="text-sm font-medium text-dark-muted hover:text-dark-text transition-colors"
               onClick={() => setMobileOpen(false)}
             >
               {link.label}
